@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+	
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<link rel="apple-touch-icon" type="image/jpg" href="favicon.png">
+	<meta name="theme-color" content="#000033">
+
+	<meta name="viewport" content="width=375, initial-scale=0.9">
+
+	<title>ferruea Music</title>
+	<link rel="shortcut icon" type="image/jpg" href="favicon.png">
+	
+	<link rel="stylesheet" href="css/estilo.css">
+	<script src="js/all.js"></script>
+	<script src="js/invertir.js"></script>
+
+</head>
+<body>
+
+	<button class="boton" onclick="invertir();">
+		<img src="invertir.png" height ="25" width="25">
+	</button>
+
+	<div class="particles" id="particles-js"></div>
+	<script src="js/particles.js"></script>
+	<script src="js/app.js"></script>
+	<script src="js/buscar.js"></script>
+
+	<div class="phone">
+		<div class="phone2">
+
+			<audio id="player" ontimeupdate="updateProgress();">
+				<source id="source">Audio no soportado
+			</audio>
+
+			<div id="controls">
+				<div class="timer" id="timer">
+					&nbsp;
+				</div>
+				
+				<div class="volumen">
+					<i class="fas fa-volume-down"></i>
+					<input type="range" name="volumen" id="volumen" min="0" max="1" step="0.01" value="0.75">
+					<i class="fas fa-volume-up"></i>
+
+				</div>
+				<i class="fas fa-backward fa-5x" onclick="prevMusic();"></i>
+				<i class="far fa-play-circle fa-5x" onclick="togglePlay();" id="iconPlay"></i>
+				<i class="fas fa-forward fa-5x" onclick="nextMusic();"></i>
+
+				<br><span id="currentPlay"></span><br>
+				<progress id="progress" value="0" max="100" ></progress>
+
+				<h3>Mi m&uacute;sica</h3>
+
+				<input id="searchTerm" type="text" onkeyup="doSearch(); replaceName(this)" placeholder="Buscar m&uacute;sica"/>
+
+				<div id="playList"></div>
+
+			</div>
+
+		</div>
+	</div>
+	
+	<div class="footer">
+		<a target="_blank" href="https://www.facebook.com/ferruea">design by ferruea</a>
+	</div>
+	
+	<div class="music">
+		<a target="_blank" href="/music">music</a>
+	</div>
+
+	<script src="js/music.js"></script>
+
+</body>
+</html>
