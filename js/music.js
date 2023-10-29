@@ -55,6 +55,7 @@ const canciones = ["",
 "alvaro-de-luna-todo-contigo.mp3",
 "alvaro-diaz-rauw-alejandro-problemon.mp3",
 "alvaro-diaz-sen-senra-1000canciones.mp3",
+"alvaro-diaz-tainy-fatal-fantassy.mp3",
 "alvaro-soler-david-bisbal-a-contracorriente.mp3",
 "alvaro-soler-magia.mp3",
 "alvaro-soler-muero.mp3",
@@ -225,6 +226,7 @@ const canciones = ["",
 "beele-myke-towers-feid-barranquilla-bajo-cero.mp3",
 "beele-si-te-interesa.mp3",
 "belen-aguilera-camaleon.mp3",
+"bellakath-ft-dani-flow-reggaeton-champagne.mp3",
 "benne-ft-gus-dapperton-supalonely.mp3",
 "benny-blanco-bts-snoop-dogg-bad-decisions.mp3",
 "beret-beso-robado.mp3",
@@ -583,6 +585,7 @@ const canciones = ["",
 "el-alfa-x-peso-pluma-plebada.mp3",
 "electric-light-orchestra-mr-blue-sky.mp3",
 "electric-love-borns.mp3",
+"elena-rose-danny-ocean-jerry-di-caracas-en-el-2000.mp3",
 "elley-duhe-middle-of-the-night.mp3",
 "ellie-goulding-love-me-like-you-do.mp3",
 "elton-john-britney-spears-hold-me-closer.mp3",
@@ -591,6 +594,7 @@ const canciones = ["",
 "ember-island-umbrella.mp3",
 "emilia-ludmilla-zecca-no-se-ve.mp3",
 "enrique-iglesias-ft-descemer-bueno-gente-de-zona-bailando.mp3",
+"enrique-iglesias-maria-becerra-asi-es-la-vida.mp3",
 "era-ameno.mp3",
 "eslabon-armado-ft-dannylux-jugaste-y-sufri.mp3",
 "eslabon-armado-peso-pluma-ella-baila-sola.mp3",
@@ -1007,6 +1011,7 @@ const canciones = ["",
 "morat-besos-en-guerra.mp3",
 "morat-como-te-atreves.mp3",
 "morat-debi-suponerlo.mp3",
+"morat-demasiado-lejos.mp3",
 "morat-duki-paris.mp3",
 "morat-feid-salir-con-vida.mp3",
 "morat-feo.mp3",
@@ -1219,6 +1224,7 @@ const canciones = ["",
 "rauw-alejandro-x-daddy-yankee-panties-y-brasieres.mp3",
 "rauw-alejandro-x-lyanno-x-brray-lokera.mp3",
 "red-hot-chili-peppers-californication.mp3",
+"reik-carin-leon-el-correcto.mp3",
 "rels-b-como-dormiste.mp3",
 "rels-b-pa-quererte.mp3",
 "rema-selena-gomez-calm-down.mp3",
@@ -1274,6 +1280,7 @@ const canciones = ["",
 "ryan-castro-sog-el-pan-de-estefania.mp3",
 "ryan-castro-sog-nea.mp3",
 "ryan-castro-wasa-wasa.mp3",
+"saiko-bandidona.mp3",
 "saiko-feid-quevedo-mora-polaris-remix.mp3",
 "saiko-supernova.mp3",
 "saint-jhn-roses-imanbek-remix.mp3",
@@ -1289,6 +1296,7 @@ const canciones = ["",
 "samurai-bonita.mp3",
 "sangiovanni-aitana-mariposas.mp3",
 "sean-paul-ft-dua-lipa-no-lie.mp3",
+"sean-paul-manuel-turizo-dem-time-deh.mp3",
 "sebastian-yatra-beret-vuelve.mp3",
 "sebastian-yatra-energia-bacana.mp3",
 "sebastian-yatra-guaynaa-chica-ideal.mp3",
@@ -1323,6 +1331,7 @@ const canciones = ["",
 "sidecars-galaxia.mp3",
 "sidonie-carreteras-infinitas.mp3",
 "silvestre-dangond-ft-nicky-jam-casate-conmigo.mp3",
+"sky-rompiendo-dei-v-crush.mp3",
 "sky-rompiendo-feid-myke-towers-el-cielo.mp3",
 "smash-mouth-all-star.mp3",
 "smile-butterfly.mp3",
@@ -1451,6 +1460,7 @@ const canciones = ["",
 "wisin-&-yandel-rosalia-besos-moja2.mp3",
 "wisin-anuel-aa-mi-exxx.mp3",
 "wisin-camilo-los-legendarios-buenos-dias.mp3",
+"wisin-chencho-corleone-loco-x-perrearte.mp3",
 "wisin-jhay-cortez-anuel-aa-ft-myke-towers-los-legendarios-fiel-remix.mp3",
 "wisin-jhay-cortez-los-legendarios-fiel.mp3",
 "wisin-jhay-cortez-ozuna-ft-los-legendarios-emojis-de-corazones.mp3",
@@ -1628,17 +1638,17 @@ function reproduccionActual(texto){
 //Funcion para cargar las canciones en el reproductor
 function loadMusic(ruta){
 	var source = document.getElementById('source');
-	var folder ="music1/";
+	var folder ="https://ferruea.tech/music1/";
 	// Verificar si el archivo existe en la variable folder
 	var xhr = new XMLHttpRequest();
-	xhr.open('HEAD', folder+"/"+ruta, false);
+	xhr.open('HEAD', folder + "/" + ruta, false);
 	xhr.send();
 	if (xhr.status === 200) {
 	// Si el archivo existe
 	source.src = folder + "/" + ruta;
 	} else {
 	// Si no se encuentra el archivo, cambiar la variable folder
-	folder = "music2/";
+	folder = "https://ferruea.tech/music2/";
 	source.src = folder + "/" + ruta;
 	}
 	var index = indiceActual[0] = canciones.indexOf(ruta);
