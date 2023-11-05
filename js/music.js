@@ -115,6 +115,7 @@ const canciones = ["",
 "arcangel-mmbs.mp3",
 "arcangel-myke-towers-digitos.mp3",
 "arcangel-no-te-vayas.mp3",
+"arcangel-peso-pluma-la-chamba.mp3",
 "arcangel-portobello.mp3",
 "arcangel-sech-romeo-santos-sigues-con-el-remix.mp3",
 "arcangel-yovngchimi-la-ruta.mp3",
@@ -509,6 +510,7 @@ const canciones = ["",
 "don-omar-ft-plan-b-hooka.mp3",
 "don-omar-nio-garcia-se-menea.mp3",
 "don-omar-sincero.mp3",
+"don-omar-wisin-yandel-sandunga.mp3",
 "don-omar-x-chencho-corleone-podemos-repetirlo.mp3",
 "don-omar-x-chencho-corleone-x-anuel-aa-podemos-repetirlo-remix.mp3",
 "don-omar-x-cosculluela-bandidos.mp3",
@@ -593,6 +595,7 @@ const canciones = ["",
 "elvis-presley-jailhouse-rock.mp3",
 "ember-island-umbrella.mp3",
 "emilia-ludmilla-zecca-no-se-ve.mp3",
+"emilia-tini-la-original.mp3",
 "enrique-iglesias-ft-descemer-bueno-gente-de-zona-bailando.mp3",
 "enrique-iglesias-maria-becerra-asi-es-la-vida.mp3",
 "era-ameno.mp3",
@@ -717,8 +720,10 @@ const canciones = ["",
 "jax-victoria-is-secret.mp3",
 "jaymes-young-infinity.mp3",
 "jay-wheeler-anuel-aa-hades66-ft-bryant-myers-dei-v-pacto-remix.mp3",
+"jay-wheeler-conep-bby.mp3",
 "jay-wheeler-dei-v-hades66-ft-luar-la-l-pacto.mp3",
 "jay-wheeler-myke-towers-jhay-cortez-rauw-alejandro-lunay-kendo-la-curiosidad-rmx-blue.mp3",
+"jay-wheeler-repeat.mp3",
 "jay-wheeler-throwback.mp3",
 "jay-z-alicia-keys-empire-state-of-mind.mp3",
 "j-balvin-&-ed-sheeran-forever-my-love.mp3",
@@ -835,11 +840,13 @@ const canciones = ["",
 "katy-perry-this-is-how-we-do.mp3",
 "katy-perry-wide-awake.mp3",
 "keityn-nueva-version.mp3",
+"kenya-grace-strangers.mp3",
 "kevin-roldan-almighty-tu-silueta.mp3",
 "kevin-roldan-bryant-myers-after-party.mp3",
 "kevin-roldan-bryant-myers-s.e.x.o.mp3",
 "kevin-roldan-bryant-myers-ufff.mp3",
 "kevin-roldan-otra-vez.mp3",
+"kevin-roldan-urus.mp3",
 "khea-ft-bad-bunny-duki-cazzu-loca-remix.mp3",
 "khea-julia-michaels-becky-g-ft-di-genius-only-one.mp3",
 "kid-cudi-pursuit-of-happiness.mp3",
@@ -1280,6 +1287,7 @@ const canciones = ["",
 "ryan-castro-sog-el-pan-de-estefania.mp3",
 "ryan-castro-sog-nea.mp3",
 "ryan-castro-wasa-wasa.mp3",
+"sabrina-carpenter-feather.mp3",
 "saiko-bandidona.mp3",
 "saiko-feid-quevedo-mora-polaris-remix.mp3",
 "saiko-supernova.mp3",
@@ -1343,6 +1351,7 @@ const canciones = ["",
 "sog-ryan-castro-cartagena.mp3",
 "sog-ryan-castro-la-garrafa.mp3",
 "soley-esteban-rojas-reboll-los-rogelios-malafama-dfzm-robin-todos-mienten.mp3",
+"soley-reboll333-3.33.mp3",
 "soulchef-biggie-smalls-write-this-down.mp3",
 "spice-girls-wannabe.mp3",
 "spicyverse-deep-end.mp3",
@@ -1384,6 +1393,7 @@ const canciones = ["",
 "tego-calderon-la-receta.mp3",
 "tego-calderon-pa-que-retozen.mp3",
 "the-1975-somebody-else.mp3",
+"the-beatles-now-and-then.mp3",
 "the-black-eyed-peas-meet-me-halfway.mp3",
 "the-chainsmokers-closer.mp3",
 "the-chainsmokers-coldplay-something-just-like-this.mp3",
@@ -1637,26 +1647,26 @@ function reproduccionActual(texto){
 }
 //Funcion para cargar las canciones en el reproductor
 function loadMusic(ruta){
-	var source = document.getElementById('source');
-	var folder ="https://ferruea.tech/music1/";
-	// Verificar si el archivo existe en la variable folder
-	var xhr = new XMLHttpRequest();
-	xhr.open('HEAD', folder + "/" + ruta, false);
+	var source = document.getElementById('source')
+	var folder1 ="https://ferruea.tech/music1/";//Carpeta donde tenemos almancenada la musica
+	var folder2 ="https://ferruea.tech/music2/";//Carpeta donde tenemos almancenada la musica
+	//Verificar si el archivo existe en la variable folder1
+	var xhr = new XMLHttpRequest()
+	xhr.open('HEAD', folder1 + ruta, false)
 	xhr.send();
 	if (xhr.status === 200) {
-	// Si el archivo existe
-	source.src = folder + "/" + ruta;
+		//Si el archivo existe en folder1
+		source.src = folder1 + ruta;
 	} else {
-	// Si no se encuentra el archivo, cambiar la variable folder
-	folder = "https://ferruea.tech/music2/";
-	source.src = folder + "/" + ruta;
+		//Si no se encuentra el archivo, cambiar la variable en folder2
+		source.src = folder2 + ruta;
 	}
-	var index = indiceActual[0] = canciones.indexOf(ruta);
-	removeActive();
-	var item = document.getElementById(index);
+	var index= indiceActual[0]= canciones.indexOf(ruta)
+	removeActive()
+	var item=document.getElementById(index)
 	item.classList.add("active");
-	reproduccionActual("Reproduciendo:\n" + ruta);
-	player.load();
+	reproduccionActual("Reproduciendo:\n"+ ruta)
+	player.load()
 }
 //Funcion para pausar o darle play 
 function togglePlay() {
@@ -1679,7 +1689,7 @@ progress.addEventListener('click', adelantar);
 function adelantar(e){
 	const scrubTime = (e.offsetX / progress.offsetWidth) * player.duration;
 	player.currentTime = scrubTime;
-	sonsole.log(e);
+	console.log(e);
 }
 //Funcion para convertir segundos a minutos y horas
 function secondsToString(seconds) {

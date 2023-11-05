@@ -1653,7 +1653,7 @@ progress.addEventListener('click', adelantar);
 function adelantar(e){
 	const scrubTime = (e.offsetX / progress.offsetWidth) * player.duration;
 	player.currentTime = scrubTime;
-	sonsole.log(e);
+	console.log(e);
 }
 //Funcion para convertir segundos a minutos y horas
 function secondsToString(seconds) {
