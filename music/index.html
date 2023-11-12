@@ -40,16 +40,16 @@ function addRow(name, url, isdir,
   fetch("https://ferruea.tech/music1/" + url, {
     method: "HEAD"
   })
-    .then(function(response) {
-      if (response.ok) {
-        link.href = "https://ferruea.tech/music1/" + url;
-      }else {
-        link.href = "https://ferruea.tech/music2/" + url;
-      }
-    })
-    .catch(function(error) {
-      console.error("Error:", error);
-    });
+  .then(function(response) {
+    if (response.ok) {
+      link.href = "https://ferruea.tech/music1/" + url;
+    } else {
+      link.href = "https://ferruea.tech/music2/" + url;
+    }
+  })
+  .catch(function(error) {
+    console.error("Error:", error);
+  });
 
   file_cell.dataset.value = name;
   file_cell.appendChild(link);
@@ -368,6 +368,7 @@ var loadTimeData;class LoadTimeData{constructor(){this.data_=null}set data(value
 <script>addRow("arcangel-myke-towers-digitos.mp3","arcangel-myke-towers-digitos.mp3",0,3138174,"3.0 MB",1693722590,"3/09/23, 1:29:50 a. m.");</script>
 <script>addRow("arcangel-no-te-vayas.mp3","arcangel-no-te-vayas.mp3",0,1606354,"1.5 MB",1693722590,"3/09/23, 1:29:50 a. m.");</script>
 <script>addRow("arcangel-peso-pluma-la-chamba.mp3","arcangel-peso-pluma-la-chamba.mp3",0,2779565,"2.7 MB",1698974514,"2/11/23, 8:21:54 p. m.");</script>
+<script>addRow("arcangel-pluton.mp3","arcangel-pluton.mp3",0,2337782,"2.2 MB",1699755908,"11/11/23, 9:25:08 p. m.");</script>
 <script>addRow("arcangel-portobello.mp3","arcangel-portobello.mp3",0,3591242,"3.4 MB",1693722590,"3/09/23, 1:29:50 a. m.");</script>
 <script>addRow("arcangel-sech-romeo-santos-sigues-con-el-remix.mp3","arcangel-sech-romeo-santos-sigues-con-el-remix.mp3",0,3034520,"2.9 MB",1693722591,"3/09/23, 1:29:51 a. m.");</script>
 <script>addRow("arcangel-yovngchimi-la-ruta.mp3","arcangel-yovngchimi-la-ruta.mp3",0,2949257,"2.8 MB",1693722591,"3/09/23, 1:29:51 a. m.");</script>
@@ -476,6 +477,7 @@ var loadTimeData;class LoadTimeData{constructor(){this.data_=null}set data(value
 <script>addRow("beele-blessd-enchulao.mp3","beele-blessd-enchulao.mp3",0,5170695,"4.9 MB",1693722593,"3/09/23, 1:29:53 a. m.");</script>
 <script>addRow("beele-farruko-jason-derulo-santorini-remix.mp3","beele-farruko-jason-derulo-santorini-remix.mp3",0,2639549,"2.5 MB",1695867641,"27/09/23, 9:20:41 p. m.");</script>
 <script>addRow("beele-farruko-santorini.mp3","beele-farruko-santorini.mp3",0,2575601,"2.5 MB",1693722593,"3/09/23, 1:29:53 a. m.");</script>
+<script>addRow("beele-morena.mp3","beele-morena.mp3",0,3024489,"2.9 MB",1699754059,"11/11/23, 8:54:19 p. m.");</script>
 <script>addRow("beele-myke-towers-feid-barranquilla-bajo-cero.mp3","beele-myke-towers-feid-barranquilla-bajo-cero.mp3",0,3869603,"3.7 MB",1693722593,"3/09/23, 1:29:53 a. m.");</script>
 <script>addRow("beele-si-te-interesa.mp3","beele-si-te-interesa.mp3",0,3485498,"3.3 MB",1693722593,"3/09/23, 1:29:53 a. m.");</script>
 <script>addRow("belen-aguilera-camaleon.mp3","belen-aguilera-camaleon.mp3",0,2813002,"2.7 MB",1693722593,"3/09/23, 1:29:53 a. m.");</script>
@@ -544,6 +546,7 @@ var loadTimeData;class LoadTimeData{constructor(){this.data_=null}set data(value
 <script>addRow("blessd-ryan-castro-fumando.mp3","blessd-ryan-castro-fumando.mp3",0,3266070,"3.1 MB",1693722595,"3/09/23, 1:29:55 a. m.");</script>
 <script>addRow("blessd-ryan-castro-quien-tv-remix.mp3","blessd-ryan-castro-quien-tv-remix.mp3",0,3885726,"3.7 MB",1693722595,"3/09/23, 1:29:55 a. m.");</script>
 <script>addRow("blessd-standly-el-barto-mi-gata-remix.mp3","blessd-standly-el-barto-mi-gata-remix.mp3",0,3942746,"3.8 MB",1693722595,"3/09/23, 1:29:55 a. m.");</script>
+<script>addRow("blessd-visaje.mp3","blessd-visaje.mp3",0,2681763,"2.6 MB",1699753416,"11/11/23, 8:43:36 p. m.");</script>
 <script>addRow("blessd-x-maluma-el-reloj.mp3","blessd-x-maluma-el-reloj.mp3",0,2889906,"2.8 MB",1693722595,"3/09/23, 1:29:55 a. m.");</script>
 <script>addRow("blessd-x-myke-towers-x-ovy-on-the-drums-tendencia-global.mp3","blessd-x-myke-towers-x-ovy-on-the-drums-tendencia-global.mp3",0,3778070,"3.6 MB",1693722595,"3/09/23, 1:29:55 a. m.");</script>
 <script>addRow("blessd-x-ovy-on-the-drums-billboard.mp3","blessd-x-ovy-on-the-drums-billboard.mp3",0,3761351,"3.6 MB",1693722595,"3/09/23, 1:29:55 a. m.");</script>
@@ -577,8 +580,14 @@ var loadTimeData;class LoadTimeData{constructor(){this.data_=null}set data(value
 <script>addRow("bulin-47-x-kd-one-x-rochy-rd-cuanto-te-estan-dando.mp3","bulin-47-x-kd-one-x-rochy-rd-cuanto-te-estan-dando.mp3",0,4560907,"4.3 MB",1693722596,"3/09/23, 1:29:56 a. m.");</script>
 <script>addRow("burak-yeter-ft-danelle-sandoval-tuesday.mp3","burak-yeter-ft-danelle-sandoval-tuesday.mp3",0,3047059,"2.9 MB",1693722596,"3/09/23, 1:29:56 a. m.");</script>
 <script>addRow("burna-boy-ft-dave-cheat-on-me.mp3","burna-boy-ft-dave-cheat-on-me.mp3",0,3563657,"3.4 MB",1693788877,"3/09/23, 7:54:37 p. m.");</script>
+<script>addRow("cali-y-el-dandee-amor.mp3","cali-y-el-dandee-amor.mp3",0,2754488,"2.6 MB",1699751296,"11/11/23, 8:08:16 p. m.");</script>
 <script>addRow("cali-y-el-dandee-beret-primera-carta.mp3","cali-y-el-dandee-beret-primera-carta.mp3",0,4142112,"4.0 MB",1693722596,"3/09/23, 1:29:56 a. m.");</script>
+<script>addRow("cali-y-el-dandee-como-ayer.mp3","cali-y-el-dandee-como-ayer.mp3",0,2518341,"2.4 MB",1699751684,"11/11/23, 8:14:44 p. m.");</script>
+<script>addRow("cali-y-el-dandee-ella.mp3","cali-y-el-dandee-ella.mp3",0,2997322,"2.9 MB",1699750832,"11/11/23, 8:00:32 p. m.");</script>
+<script>addRow("cali-y-el-dandee-en-pausa.mp3","cali-y-el-dandee-en-pausa.mp3",0,2675075,"2.6 MB",1699751323,"11/11/23, 8:08:43 p. m.");</script>
+<script>addRow("cali-y-el-dandee-la-vi-llorar-yo.mp3","cali-y-el-dandee-la-vi-llorar-yo.mp3",0,2933374,"2.8 MB",1699751445,"11/11/23, 8:10:45 p. m.");</script>
 <script>addRow("cali-y-el-dandee-maquina-del-tiempo.mp3","cali-y-el-dandee-maquina-del-tiempo.mp3",0,2455647,"2.3 MB",1694992078,"17/09/23, 6:07:58 p. m.");</script>
+<script>addRow("cali-y-el-dandee-me-voy.mp3","cali-y-el-dandee-me-voy.mp3",0,2290135,"2.2 MB",1699751377,"11/11/23, 8:09:37 p. m.");</script>
 <script>addRow("cali-y-el-dandee-yo-te-esperare.mp3","cali-y-el-dandee-yo-te-esperare.mp3",0,3648920,"3.5 MB",1693722596,"3/09/23, 1:29:56 a. m.");</script>
 <script>addRow("calle-13-atrevete-te-te.mp3","calle-13-atrevete-te-te.mp3",0,3842853,"3.7 MB",1693722596,"3/09/23, 1:29:56 a. m.");</script>
 <script>addRow("calvin-harris-dua-lipa-one-kiss.mp3","calvin-harris-dua-lipa-one-kiss.mp3",0,3439105,"3.3 MB",1693722596,"3/09/23, 1:29:56 a. m.");</script>
@@ -776,6 +785,7 @@ var loadTimeData;class LoadTimeData{constructor(){this.data_=null}set data(value
 <script>addRow("dua-lipa-dance-the-night.mp3","dua-lipa-dance-the-night.mp3",0,2826795,"2.7 MB",1693722602,"3/09/23, 1:30:02 a. m.");</script>
 <script>addRow("dua-lipa-ft-dababy-levitating.mp3","dua-lipa-ft-dababy-levitating.mp3",0,3251441,"3.1 MB",1693722602,"3/09/23, 1:30:02 a. m.");</script>
 <script>addRow("dua-lipa-hotter-than-hell.mp3","dua-lipa-hotter-than-hell.mp3",0,3010279,"2.9 MB",1693722602,"3/09/23, 1:30:02 a. m.");</script>
+<script>addRow("dua-lipa-houdini.mp3","dua-lipa-houdini.mp3",0,4486998,"4.3 MB",1699754353,"11/11/23, 8:59:13 p. m.");</script>
 <script>addRow("dua-lipa-levitating.mp3","dua-lipa-levitating.mp3",0,3262308,"3.1 MB",1693722602,"3/09/23, 1:30:02 a. m.");</script>
 <script>addRow("dua-lipa-love-again.mp3","dua-lipa-love-again.mp3",0,4088613,"3.9 MB",1693722602,"3/09/23, 1:30:02 a. m.");</script>
 <script>addRow("dua-lipa-new-rules.mp3","dua-lipa-new-rules.mp3",0,3426984,"3.3 MB",1693722602,"3/09/23, 1:30:02 a. m.");</script>
@@ -974,6 +984,7 @@ var loadTimeData;class LoadTimeData{constructor(){this.data_=null}set data(value
 <script>addRow("jay-wheeler-anuel-aa-hades66-ft-bryant-myers-dei-v-pacto-remix.mp3","jay-wheeler-anuel-aa-hades66-ft-bryant-myers-dei-v-pacto-remix.mp3",0,5537678,"5.3 MB",1693722607,"3/09/23, 1:30:07 a. m.");</script>
 <script>addRow("jay-wheeler-conep-bby.mp3","jay-wheeler-conep-bby.mp3",0,3063777,"2.9 MB",1699059680,"3/11/23, 8:01:20 p. m.");</script>
 <script>addRow("jay-wheeler-dei-v-hades66-ft-luar-la-l-pacto.mp3","jay-wheeler-dei-v-hades66-ft-luar-la-l-pacto.mp3",0,4545861,"4.3 MB",1693722607,"3/09/23, 1:30:07 a. m.");</script>
+<script>addRow("jay-wheeler-luar-la-l-bm-complicado.mp3","jay-wheeler-luar-la-l-bm-complicado.mp3",0,3401488,"3.2 MB",1699232830,"5/11/23, 8:07:10 p. m.");</script>
 <script>addRow("jay-wheeler-myke-towers-jhay-cortez-rauw-alejandro-lunay-kendo-la-curiosidad-rmx-blue.mp3","jay-wheeler-myke-towers-jhay-cortez-rauw-alejandro-lunay-kendo-la-curiosidad-rmx-blue.mp3",0,6129508,"5.8 MB",1693722607,"3/09/23, 1:30:07 a. m.");</script>
 <script>addRow("jay-wheeler-repeat.mp3","jay-wheeler-repeat.mp3",0,2406746,"2.3 MB",1698975960,"2/11/23, 8:46:00 p. m.");</script>
 <script>addRow("jay-wheeler-throwback.mp3","jay-wheeler-throwback.mp3",0,2359934,"2.3 MB",1695867345,"27/09/23, 9:15:45 p. m.");</script>
@@ -1168,6 +1179,7 @@ var loadTimeData;class LoadTimeData{constructor(){this.data_=null}set data(value
 <script>addRow("major-lazer-ft-mo-dj-snake-lean-on.mp3","major-lazer-ft-mo-dj-snake-lean-on.mp3",0,2863993,"2.7 MB",1693722617,"3/09/23, 1:30:17 a. m.");</script>
 <script>addRow("major-lazer-ft-nyla-fuse-odg-light-it-up.mp3","major-lazer-ft-nyla-fuse-odg-light-it-up.mp3",0,2729828,"2.6 MB",1693722617,"3/09/23, 1:30:17 a. m.");</script>
 <script>addRow("maldita-nerea-el-secreto-de-las-tortugas.mp3","maldita-nerea-el-secreto-de-las-tortugas.mp3",0,3816522,"3.6 MB",1693722617,"3/09/23, 1:30:17 a. m.");</script>
+<script>addRow("maldy-ryan-castro-chichi-pana.mp3","maldy-ryan-castro-chichi-pana.mp3",0,2897848,"2.8 MB",1699754777,"11/11/23, 9:06:17 p. m.");</script>
 <script>addRow("maldy-tiempos-de-plan-b.mp3","maldy-tiempos-de-plan-b.mp3",0,2599007,"2.5 MB",1693722617,"3/09/23, 1:30:17 a. m.");</script>
 <script>addRow("maluma-anuel-aa-diablo-que-chimba.mp3","maluma-anuel-aa-diablo-que-chimba.mp3",0,3717048,"3.5 MB",1693722617,"3/09/23, 1:30:17 a. m.");</script>
 <script>addRow("maluma-carin-leon-segun-quien.mp3","maluma-carin-leon-segun-quien.mp3",0,2305802,"2.2 MB",1693722617,"3/09/23, 1:30:17 a. m.");</script>
@@ -1198,6 +1210,7 @@ var loadTimeData;class LoadTimeData{constructor(){this.data_=null}set data(value
 <script>addRow("marc-segui-5-estrellas.mp3","marc-segui-5-estrellas.mp3",0,3172865,"3.0 MB",1693722618,"3/09/23, 1:30:18 a. m.");</script>
 <script>addRow("marc-segui-agua-salada.mp3","marc-segui-agua-salada.mp3",0,3390621,"3.2 MB",1693722618,"3/09/23, 1:30:18 a. m.");</script>
 <script>addRow("marc-segui-ft-rauw-alejandro-pol-granch-tiroteo-remix.mp3","marc-segui-ft-rauw-alejandro-pol-granch-tiroteo-remix.mp3",0,5122644,"4.9 MB",1693722618,"3/09/23, 1:30:18 a. m.");</script>
+<script>addRow("maria-becerra-chencho-corleone-ovy-on-the-drums-piscina.mp3","maria-becerra-chencho-corleone-ovy-on-the-drums-piscina.mp3",0,3612140,"3.4 MB",1699754874,"11/11/23, 9:07:54 p. m.");</script>
 <script>addRow("maria-becerra-corazon-vacio.mp3","maria-becerra-corazon-vacio.mp3",0,2570168,"2.5 MB",1693722618,"3/09/23, 1:30:18 a. m.");</script>
 <script>addRow("mark-ronson-ft-bruno-mars-uptown-funk.mp3","mark-ronson-ft-bruno-mars-uptown-funk.mp3",0,4328104,"4.1 MB",1693722618,"3/09/23, 1:30:18 a. m.");</script>
 <script>addRow("marlena-me-sabe-mal.mp3","marlena-me-sabe-mal.mp3",0,3253949,"3.1 MB",1693722618,"3/09/23, 1:30:18 a. m.");</script>
@@ -1472,6 +1485,7 @@ var loadTimeData;class LoadTimeData{constructor(){this.data_=null}set data(value
 <script>addRow("rauw-alejandro-aquel-nap-zzzz.mp3","rauw-alejandro-aquel-nap-zzzz.mp3",0,4723911,"4.5 MB",1693722630,"3/09/23, 1:30:30 a. m.");</script>
 <script>addRow("rauw-alejandro-bzrp-music-sessions-vol-56.mp3","rauw-alejandro-bzrp-music-sessions-vol-56.mp3",0,3370141,"3.2 MB",1693722630,"3/09/23, 1:30:30 a. m.");</script>
 <script>addRow("rauw-alejandro-chencho-corleone-ft-kevvo-bryant-myers-lyanno-dalex-el-efecto-remix.mp3","rauw-alejandro-chencho-corleone-ft-kevvo-bryant-myers-lyanno-dalex-el-efecto-remix.mp3",0,4639901,"4.4 MB",1693722630,"3/09/23, 1:30:30 a. m.");</script>
+<script>addRow("rauw-alejandro-diluvio.mp3","rauw-alejandro-diluvio.mp3",0,3154057,"3.0 MB",1699754655,"11/11/23, 9:04:15 p. m.");</script>
 <script>addRow("rauw-alejandro-hayami-hana-by-raul.mp3","rauw-alejandro-hayami-hana-by-raul.mp3",0,5234239,"5.0 MB",1693722630,"3/09/23, 1:30:30 a. m.");</script>
 <script>addRow("rauw-alejandro-lejos-del-cielo.mp3","rauw-alejandro-lejos-del-cielo.mp3",0,3344646,"3.2 MB",1693722630,"3/09/23, 1:30:30 a. m.");</script>
 <script>addRow("rauw-alejandro-mr-nasgai-2-catorce.mp3","rauw-alejandro-mr-nasgai-2-catorce.mp3",0,3399399,"3.2 MB",1693722630,"3/09/23, 1:30:30 a. m.");</script>
@@ -1704,6 +1718,7 @@ var loadTimeData;class LoadTimeData{constructor(){this.data_=null}set data(value
 <script>addRow("twenty-one-pilots-stressed-out.mp3","twenty-one-pilots-stressed-out.mp3",0,3306612,"3.2 MB",1693722638,"3/09/23, 1:30:38 a. m.");</script>
 <script>addRow("undream-ft-neoni-nightmare.mp3","undream-ft-neoni-nightmare.mp3",0,3075062,"2.9 MB",1693722638,"3/09/23, 1:30:38 a. m.");</script>
 <script>addRow("vance-joy-riptide.mp3","vance-joy-riptide.mp3",0,3171611,"3.0 MB",1693722638,"3/09/23, 1:30:38 a. m.");</script>
+<script>addRow("vicco-abraham-mateo-tequiero.mp3","vicco-abraham-mateo-tequiero.mp3",0,2976842,"2.8 MB",1699749448,"11/11/23, 7:37:28 p. m.");</script>
 <script>addRow("vicco-nochentera.mp3","vicco-nochentera.mp3",0,3236395,"3.1 MB",1693722638,"3/09/23, 1:30:38 a. m.");</script>
 <script>addRow("vico-c-al2-el-aldeano-blam-blam.mp3","vico-c-al2-el-aldeano-blam-blam.mp3",0,5608313,"5.3 MB",1693722638,"3/09/23, 1:30:38 a. m.");</script>
 <script>addRow("vico-c-preguntale-a-tu-papa-por-mi.mp3","vico-c-preguntale-a-tu-papa-por-mi.mp3",0,5197041,"5.0 MB",1693722638,"3/09/23, 1:30:38 a. m.");</script>
