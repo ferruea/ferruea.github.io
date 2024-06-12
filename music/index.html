@@ -37,14 +37,14 @@ function addRow(name, url, isdir,
   link.innerText = name;
   
    // Verificar existencia del archivo en music1
-  fetch("https://ferruea.tech/music1/" + url, {
+  fetch("https://ferruea.github.io/music1/" + url, {
     method: "HEAD"
   })
   .then(function(response) {
     if (response.ok) {
-      link.href = "https://ferruea.tech/music1/" + url;
+      link.href = "https://ferruea.github.io/music1/" + url;
     } else {
-      link.href = "https://ferruea.tech/music2/" + url;
+      link.href = "https://ferruea.github.io/music2/" + url;
     }
   })
   .catch(function(error) {
@@ -251,7 +251,7 @@ window.addEventListener('DOMContentLoaded', onLoad);
 // Copyright 2012 The Chromium Authors
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
-var loadTimeData;class LoadTimeData{constructor(){this.data_=null}set data(value){expect(!this.data_,"Re-setting data.");this.data_=value}valueExists(id){return id in this.data_}getValue(id){expect(this.data_,"No data. Did you remember to include strings.js?");const value=this.data_[id];expect(typeof value!=="undefined","Could not find value for "+id);return value}getString(id){const value=this.getValue(id);expectIsType(id,value,"string");return value}getStringF(id,var_args){const value=this.getString(id);if(!value){return""}const args=Array.prototype.slice.call(arguments);args[0]=value;return this.substituteString.apply(this,args)}substituteString(label,var_args){const varArgs=arguments;return label.replace(/\$(.|$|\n)/g,(function(m){expect(m.match(/\$[$1-9]/),"Unescaped $ found in localized string.");return m==="$$"?"$":varArgs[m[1]]}))}getBoolean(id){const value=this.getValue(id);expectIsType(id,value,"boolean");return value}getInteger(id){const value=this.getValue(id);expectIsType(id,value,"number");expect(value===Math.floor(value),"Number isn't integer: "+value);return value}overrideValues(replacements){expect(typeof replacements==="object","Replacements must be a dictionary object.");for(const key in replacements){this.data_[key]=replacements[key]}}}function expect(condition,message){if(!condition){throw new Error("Unexpected condition on "+document.location.href+": "+message)}}function expectIsType(id,value,type){expect(typeof value===type,"["+value+"] ("+id+") is not a "+type)}expect(!loadTimeData,"should only include this file once");loadTimeData=new LoadTimeData;window.loadTimeData=loadTimeData;</script><script>loadTimeData.data = {"header":"Índice de LOCATION","headerDateModified":"Fecha de modificación","headerName":"Nombre","headerSize":"Tamaño","language":"es","parentDirText":"[directorio principal]","textdirection":"ltr"};</script><script>start("ferruea.tech\\music\\");</script>
+var loadTimeData;class LoadTimeData{constructor(){this.data_=null}set data(value){expect(!this.data_,"Re-setting data.");this.data_=value}valueExists(id){return id in this.data_}getValue(id){expect(this.data_,"No data. Did you remember to include strings.js?");const value=this.data_[id];expect(typeof value!=="undefined","Could not find value for "+id);return value}getString(id){const value=this.getValue(id);expectIsType(id,value,"string");return value}getStringF(id,var_args){const value=this.getString(id);if(!value){return""}const args=Array.prototype.slice.call(arguments);args[0]=value;return this.substituteString.apply(this,args)}substituteString(label,var_args){const varArgs=arguments;return label.replace(/\$(.|$|\n)/g,(function(m){expect(m.match(/\$[$1-9]/),"Unescaped $ found in localized string.");return m==="$$"?"$":varArgs[m[1]]}))}getBoolean(id){const value=this.getValue(id);expectIsType(id,value,"boolean");return value}getInteger(id){const value=this.getValue(id);expectIsType(id,value,"number");expect(value===Math.floor(value),"Number isn't integer: "+value);return value}overrideValues(replacements){expect(typeof replacements==="object","Replacements must be a dictionary object.");for(const key in replacements){this.data_[key]=replacements[key]}}}function expect(condition,message){if(!condition){throw new Error("Unexpected condition on "+document.location.href+": "+message)}}function expectIsType(id,value,type){expect(typeof value===type,"["+value+"] ("+id+") is not a "+type)}expect(!loadTimeData,"should only include this file once");loadTimeData=new LoadTimeData;window.loadTimeData=loadTimeData;</script><script>loadTimeData.data = {"header":"Índice de LOCATION","headerDateModified":"Fecha de modificación","headerName":"Nombre","headerSize":"Tamaño","language":"es","parentDirText":"[directorio principal]","textdirection":"ltr"};</script><script>start("ferruea.github.io\\music\\");</script>
 <script>onHasParentDirectory();</script>
 <script>addRow("$uicideboy$-...and-to-those-i-love-thanks-for-sticking-around.mp3","$uicideboy$-...and-to-those-i-love-thanks-for-sticking-around.mp3",0,2697227,"2.6 MB",1693722585,"3/09/23, 1:29:45 a. m.");</script>
 <script>addRow("(g)i-dle-nxde.mp3","(g)i-dle-nxde.mp3",0,2856470,"2.7 MB",1693722585,"3/09/23, 1:29:45 a. m.");</script>
@@ -318,6 +318,7 @@ var loadTimeData;class LoadTimeData{constructor(){this.data_=null}set data(value
 <script>addRow("alvaro-de-luna-levantaremos-al-sol.mp3","alvaro-de-luna-levantaremos-al-sol.mp3",0,3579539,"3.4 MB",1693722589,"3/09/23, 1:29:49 a. m.");</script>
 <script>addRow("alvaro-de-luna-timo-hoy-festejo.mp3","alvaro-de-luna-timo-hoy-festejo.mp3",0,2627428,"2.5 MB",1704059624,"31/12/23, 4:53:44 p. m.");</script>
 <script>addRow("alvaro-de-luna-todo-contigo.mp3","alvaro-de-luna-todo-contigo.mp3",0,2649998,"2.5 MB",1693722589,"3/09/23, 1:29:49 a. m.");</script>
+<script>addRow("alvaro-diaz-feid-gatitas-sandungueras-vol-1.mp3","alvaro-diaz-feid-gatitas-sandungueras-vol-1.mp3",0,2111248,"2.0 MB",1716758165,"26/05/24, 4:16:05 p. m.");</script>
 <script>addRow("alvaro-diaz-quevedo-quizas-si-quizas-no.mp3","alvaro-diaz-quevedo-quizas-si-quizas-no.mp3",0,3253113,"3.1 MB",1700956798,"25/11/23, 6:59:58 p. m.");</script>
 <script>addRow("alvaro-diaz-rauw-alejandro-problemon.mp3","alvaro-diaz-rauw-alejandro-problemon.mp3",0,4641496,"4.4 MB",1693722589,"3/09/23, 1:29:49 a. m.");</script>
 <script>addRow("alvaro-diaz-sen-senra-1000canciones.mp3","alvaro-diaz-sen-senra-1000canciones.mp3",0,3941910,"3.8 MB",1693722589,"3/09/23, 1:29:49 a. m.");</script>
@@ -417,6 +418,7 @@ var loadTimeData;class LoadTimeData{constructor(){this.data_=null}set data(value
 <script>addRow("arcangel-yovngchimi-la-ruta.mp3","arcangel-yovngchimi-la-ruta.mp3",0,2949257,"2.8 MB",1693722591,"3/09/23, 1:29:51 a. m.");</script>
 <script>addRow("ariana-grande-34-35.mp3","ariana-grande-34-35.mp3",0,2739441,"2.6 MB",1693722591,"3/09/23, 1:29:51 a. m.");</script>
 <script>addRow("ariana-grande-positions.mp3","ariana-grande-positions.mp3",0,2739441,"2.6 MB",1693722591,"3/09/23, 1:29:51 a. m.");</script>
+<script>addRow("ariana-grande-the-boy-is-mine.mp3","ariana-grande-the-boy-is-mine.mp3",0,2779565,"2.7 MB",1717900621,"8/06/24, 9:37:01 p. m.");</script>
 <script>addRow("ariana-grande-we-can't-be-friends-wait-for-your-love.mp3","ariana-grande-we-can't-be-friends-wait-for-your-love.mp3",0,3659787,"3.5 MB",1710037348,"9/03/24, 9:22:28 p. m.");</script>
 <script>addRow("ariana-grande-yes-and.mp3","ariana-grande-yes-and.mp3",0,3441612,"3.3 MB",1705205039,"13/01/24, 11:03:59 p. m.");</script>
 <script>addRow("arizona-zervas-roxanne.mp3","arizona-zervas-roxanne.mp3",0,2585214,"2.5 MB",1693722591,"3/09/23, 1:29:51 a. m.");</script>
@@ -517,6 +519,7 @@ var loadTimeData;class LoadTimeData{constructor(){this.data_=null}set data(value
 <script>addRow("bad-bunny-yo-perreo-sola.mp3","bad-bunny-yo-perreo-sola.mp3",0,2755741,"2.6 MB",1693722593,"3/09/23, 1:29:53 a. m.");</script>
 <script>addRow("bad-bunny-yo-visto-asi.mp3","bad-bunny-yo-visto-asi.mp3",0,3065867,"2.9 MB",1693722593,"3/09/23, 1:29:53 a. m.");</script>
 <script>addRow("bad-gyal-give-me.mp3","bad-gyal-give-me.mp3",0,2651252,"2.5 MB",1703641288,"26/12/23, 8:41:28 p. m.");</script>
+<script>addRow("bad-gyal-ivy-queen-perdio.mp3","bad-gyal-ivy-queen-perdio.mp3",0,2561808,"2.4 MB",1716761829,"26/05/24, 5:17:09 p. m.");</script>
 <script>addRow("bad-gyal-young-miko-tokischa-chulo-pt.2.mp3","bad-gyal-young-miko-tokischa-chulo-pt.2.mp3",0,3510994,"3.3 MB",1693722593,"3/09/23, 1:29:53 a. m.");</script>
 <script>addRow("bag-raiders-shooting-stars.mp3","bag-raiders-shooting-stars.mp3",0,3618827,"3.5 MB",1693722593,"3/09/23, 1:29:53 a. m.");</script>
 <script>addRow("basshunter-dota.mp3","basshunter-dota.mp3",0,3193345,"3.0 MB",1693722593,"3/09/23, 1:29:53 a. m.");</script>
@@ -578,6 +581,7 @@ var loadTimeData;class LoadTimeData{constructor(){this.data_=null}set data(value
 <script>addRow("billie-eilish-wildflower.mp3","billie-eilish-wildflower.mp3",0,4181400,"4.0 MB",1716164122,"19/05/24, 7:15:22 p. m.");</script>
 <script>addRow("birdy-voyager.mp3","birdy-voyager.mp3",0,3957374,"3.8 MB",1693722594,"3/09/23, 1:29:54 a. m.");</script>
 <script>addRow("bizarrap-natanael-cano-entre-las-de-20.mp3","bizarrap-natanael-cano-entre-las-de-20.mp3",0,2697645,"2.6 MB",1712443763,"6/04/24, 5:49:23 p. m.");</script>
+<script>addRow("bizarrap-x-lismar-subio-la-temperatura.mp3","bizarrap-x-lismar-subio-la-temperatura.mp3",0,2992724,"2.9 MB",1716759445,"26/05/24, 4:37:25 p. m.");</script>
 <script>addRow("bjork-ft-rosalia-oral.mp3","bjork-ft-rosalia-oral.mp3",0,3565328,"3.4 MB",1701135929,"27/11/23, 8:45:29 p. m.");</script>
 <script>addRow("blackbear-hot-girl-bummer.mp3","blackbear-hot-girl-bummer.mp3",0,2964303,"2.8 MB",1693722594,"3/09/23, 1:29:54 a. m.");</script>
 <script>addRow("blackbear-idfc.mp3","blackbear-idfc.mp3",0,3314135,"3.2 MB",1693722594,"3/09/23, 1:29:54 a. m.");</script>
@@ -614,7 +618,7 @@ var loadTimeData;class LoadTimeData{constructor(){this.data_=null}set data(value
 <script>addRow("blessd-ojitos-rojos.mp3","blessd-ojitos-rojos.mp3",0,2913312,"2.8 MB",1693722595,"3/09/23, 1:29:55 a. m.");</script>
 <script>addRow("blessd-palabras-sobran.mp3","blessd-palabras-sobran.mp3",0,3461675,"3.3 MB",1693722595,"3/09/23, 1:29:55 a. m.");</script>
 <script>addRow("blessd-philip-ariaz-bandida.mp3","blessd-philip-ariaz-bandida.mp3",0,3125217,"3.0 MB",1693722595,"3/09/23, 1:29:55 a. m.");</script>
-<script>addRow("blessd-pirlo-the-prodigiez-somo-nosotros.mp3","blessd-pirlo-the-prodigiez-somo-nosotros.mp3",0,2844767,"2.7 MB",1716159529,"19/05/24, 5:58:49 p. m.");</script>
+<script>addRow("blessd-pirlo-the-prodigiez-somos-nosotros.mp3","blessd-pirlo-the-prodigiez-somos-nosotros.mp3",0,2844767,"2.7 MB",1716159529,"19/05/24, 5:58:49 p. m.");</script>
 <script>addRow("blessd-pirlo-vice.mp3","blessd-pirlo-vice.mp3",0,2578945,"2.5 MB",1693722595,"3/09/23, 1:29:55 a. m.");</script>
 <script>addRow("blessd-pirlo-ziploc.mp3","blessd-pirlo-ziploc.mp3",0,3786429,"3.6 MB",1693722595,"3/09/23, 1:29:55 a. m.");</script>
 <script>addRow("blessd-por-deporte.mp3","blessd-por-deporte.mp3",0,2937136,"2.8 MB",1716159425,"19/05/24, 5:57:05 p. m.");</script>
@@ -629,6 +633,7 @@ var loadTimeData;class LoadTimeData{constructor(){this.data_=null}set data(value
 <script>addRow("blessd-visaje.mp3","blessd-visaje.mp3",0,2681763,"2.6 MB",1699753416,"11/11/23, 8:43:36 p. m.");</script>
 <script>addRow("blessd-x-feid-si-sabe-ferxxo.mp3","blessd-x-feid-si-sabe-ferxxo.mp3",0,2441854,"2.3 MB",1706404246,"27/01/24, 8:10:46 p. m.");</script>
 <script>addRow("blessd-x-maluma-el-reloj.mp3","blessd-x-maluma-el-reloj.mp3",0,2889906,"2.8 MB",1693722595,"3/09/23, 1:29:55 a. m.");</script>
+<script>addRow("blessd-x-maluma-oe-bebe.mp3","blessd-x-maluma-oe-bebe.mp3",0,2984783,"2.8 MB",1717899735,"8/06/24, 9:22:15 p. m.");</script>
 <script>addRow("blessd-x-myke-towers-x-ovy-on-the-drums-tendencia-global.mp3","blessd-x-myke-towers-x-ovy-on-the-drums-tendencia-global.mp3",0,3778070,"3.6 MB",1693722595,"3/09/23, 1:29:55 a. m.");</script>
 <script>addRow("blessd-x-ovy-on-the-drums-billboard.mp3","blessd-x-ovy-on-the-drums-billboard.mp3",0,3761351,"3.6 MB",1693722595,"3/09/23, 1:29:55 a. m.");</script>
 <script>addRow("blessd-xovy-on-the-drums-mirame.mp3","blessd-xovy-on-the-drums-mirame.mp3",0,2520848,"2.4 MB",1713665154,"20/04/24, 9:05:54 p. m.");</script>
@@ -650,6 +655,7 @@ var loadTimeData;class LoadTimeData{constructor(){this.data_=null}set data(value
 <script>addRow("braaten-&-aili-without-you.mp3","braaten-&-aili-without-you.mp3",0,3053746,"2.9 MB",1693722595,"3/09/23, 1:29:55 a. m.");</script>
 <script>addRow("breakbot-ft-irfane-baby-im-yours.mp3","breakbot-ft-irfane-baby-im-yours.mp3",0,2416777,"2.3 MB",1693722595,"3/09/23, 1:29:55 a. m.");</script>
 <script>addRow("briella-coquette.mp3","briella-coquette.mp3",0,2441854,"2.3 MB",1708878603,"25/02/24, 11:30:03 a. m.");</script>
+<script>addRow("briella-la-joaqui-yami-safdie-coquette-remix.mp3","briella-la-joaqui-yami-safdie-coquette-remix.mp3",0,3461675,"3.3 MB",1717375275,"2/06/24, 7:41:15 p. m.");</script>
 <script>addRow("britton-if-this-is-goodbye.mp3","britton-if-this-is-goodbye.mp3",0,4285472,"4.1 MB",1702167174,"9/12/23, 7:12:54 p. m.");</script>
 <script>addRow("broken-flow-suffocate.mp3","broken-flow-suffocate.mp3",0,1932780,"1.8 MB",1700182975,"16/11/23, 8:02:55 p. m.");</script>
 <script>addRow("brokix-&-esteban-rojas-suenos-perdidos.mp3","brokix-&-esteban-rojas-suenos-perdidos.mp3",0,4097390,"3.9 MB",1706403948,"27/01/24, 8:05:48 p. m.");</script>
@@ -706,6 +712,7 @@ var loadTimeData;class LoadTimeData{constructor(){this.data_=null}set data(value
 <script>addRow("camilo-shawn-mendes-ksi-remix.mp3","camilo-shawn-mendes-ksi-remix.mp3",0,2851454,"2.7 MB",1693722597,"3/09/23, 1:29:57 a. m.");</script>
 <script>addRow("camilo-vida-de-rico.mp3","camilo-vida-de-rico.mp3",0,3036610,"2.9 MB",1693722597,"3/09/23, 1:29:57 a. m.");</script>
 <script>addRow("canserbero-es-epico.mp3","canserbero-es-epico.mp3",0,5798484,"5.5 MB",1693722597,"3/09/23, 1:29:57 a. m.");</script>
+<script>addRow("carin-leon-despidase-bien.mp3","carin-leon-despidase-bien.mp3",0,3703673,"3.5 MB",1717375607,"2/06/24, 7:46:47 p. m.");</script>
 <script>addRow("carin-leon-grupo-frontera-alch-si.mp3","carin-leon-grupo-frontera-alch-si.mp3",0,2464842,"2.4 MB",1701575197,"2/12/23, 10:46:37 p. m.");</script>
 <script>addRow("carin-leon-primera-cita.mp3","carin-leon-primera-cita.mp3",0,2984783,"2.8 MB",1700349249,"18/11/23, 6:14:09 p. m.");</script>
 <script>addRow("carla-morrison-disfruto.mp3","carla-morrison-disfruto.mp3",0,3953195,"3.8 MB",1693722597,"3/09/23, 1:29:57 a. m.");</script>
@@ -726,6 +733,7 @@ var loadTimeData;class LoadTimeData{constructor(){this.data_=null}set data(value
 <script>addRow("charlie-puth-ft-jung-kook-of-bts-left-and-right.mp3","charlie-puth-ft-jung-kook-of-bts-left-and-right.mp3",0,2458572,"2.3 MB",1693722597,"3/09/23, 1:29:57 a. m.");</script>
 <script>addRow("charlie-puth-ft-selena-gomez-we-dont-talk-anymore.mp3","charlie-puth-ft-selena-gomez-we-dont-talk-anymore.mp3",0,3478393,"3.3 MB",1693722597,"3/09/23, 1:29:57 a. m.");</script>
 <script>addRow("charlie-puth-light-switch.mp3","charlie-puth-light-switch.mp3",0,2990217,"2.9 MB",1693722597,"3/09/23, 1:29:57 a. m.");</script>
+<script>addRow("charlie-usg-semanas.mp3","charlie-usg-semanas.mp3",0,2860547,"2.7 MB",1717898362,"8/06/24, 8:59:22 p. m.");</script>
 <script>addRow("charly-black-gyal-you-a-party-animal.mp3","charly-black-gyal-you-a-party-animal.mp3",0,3378083,"3.2 MB",1693722597,"3/09/23, 1:29:57 a. m.");</script>
 <script>addRow("chayanne-torero.mp3","chayanne-torero.mp3",0,3490514,"3.3 MB",1693722597,"3/09/23, 1:29:57 a. m.");</script>
 <script>addRow("chencho-corleone-good-times.mp3","chencho-corleone-good-times.mp3",0,3515591,"3.4 MB",1694991885,"17/09/23, 6:04:45 p. m.");</script>
@@ -775,6 +783,7 @@ var loadTimeData;class LoadTimeData{constructor(){this.data_=null}set data(value
 <script>addRow("cris-mj-dei-v-diabolica.mp3","cris-mj-dei-v-diabolica.mp3",0,3073808,"2.9 MB",1703556528,"25/12/23, 9:08:48 p. m.");</script>
 <script>addRow("cris-mj-duki-nicki-nicole-standly-stars-music-chile-marisola-remix.mp3","cris-mj-duki-nicki-nicole-standly-stars-music-chile-marisola-remix.mp3",0,3801057,"3.6 MB",1693722598,"3/09/23, 1:29:58 a. m.");</script>
 <script>addRow("cris-mj-luar-la-l-mia-na-mas.mp3","cris-mj-luar-la-l-mia-na-mas.mp3",0,2970990,"2.8 MB",1701617856,"3/12/23, 10:37:36 a. m.");</script>
+<script>addRow("cris-mj-si-no-es-contigo.mp3","cris-mj-si-no-es-contigo.mp3",0,2497861,"2.4 MB",1716761518,"26/05/24, 5:11:58 p. m.");</script>
 <script>addRow("cris-mj-una-noche-en-medellin.mp3","cris-mj-una-noche-en-medellin.mp3",0,2608202,"2.5 MB",1693722598,"3/09/23, 1:29:58 a. m.");</script>
 <script>addRow("crissin-totoy-el-frio-natan-&-shander-poblado.mp3","crissin-totoy-el-frio-natan-&-shander-poblado.mp3",0,3228035,"3.1 MB",1693722598,"3/09/23, 1:29:58 a. m.");</script>
 <script>addRow("c-tangana-demasiadas-mujeres.mp3","c-tangana-demasiadas-mujeres.mp3",0,2463588,"2.3 MB",1693722596,"3/09/23, 1:29:56 a. m.");</script>
@@ -805,6 +814,7 @@ var loadTimeData;class LoadTimeData{constructor(){this.data_=null}set data(value
 <script>addRow("cumbia-tu-forma-de-amar.mp3","cumbia-tu-forma-de-amar.mp3",0,3635128,"3.5 MB",1693722599,"3/09/23, 1:29:59 a. m.");</script>
 <script>addRow("cumbia-tu-me-estas-enamorando.mp3","cumbia-tu-me-estas-enamorando.mp3",0,2052316,"2.0 MB",1693722599,"3/09/23, 1:29:59 a. m.");</script>
 <script>addRow("custom-x-luar-la-l-x-almighty-x-la-exce-zodiaco.mp3","custom-x-luar-la-l-x-almighty-x-la-exce-zodiaco.mp3",0,3886831,"3.7 MB",1715478931,"11/05/24, 8:55:31 p. m.");</script>
+<script>addRow("cyril-stumblin'-in.mp3","cyril-stumblin'-in.mp3",0,3415281,"3.3 MB",1716757062,"26/05/24, 3:57:42 p. m.");</script>
 <script>addRow("d4vd-here-with-me.mp3","d4vd-here-with-me.mp3",0,3881306,"3.7 MB",1705278178,"14/01/24, 7:22:58 p. m.");</script>
 <script>addRow("d4vd-romantic-homicide.mp3","d4vd-romantic-homicide.mp3",0,2123787,"2.0 MB",1693722599,"3/09/23, 1:29:59 a. m.");</script>
 <script>addRow("daddy-ft-faith-evans-&-112-i-ll-be-missing-you.mp3","daddy-ft-faith-evans-&-112-i-ll-be-missing-you.mp3",0,4906141,"4.7 MB",1693722599,"3/09/23, 1:29:59 a. m.");</script>
@@ -856,6 +866,7 @@ var loadTimeData;class LoadTimeData{constructor(){this.data_=null}set data(value
 <script>addRow("david-guetta-showtek-ft-vassy-bad.mp3","david-guetta-showtek-ft-vassy-bad.mp3",0,2732336,"2.6 MB",1693722600,"3/09/23, 1:30:00 a. m.");</script>
 <script>addRow("david-guetta-sia-lets-love.mp3","david-guetta-sia-lets-love.mp3",0,3259382,"3.1 MB",1693722600,"3/09/23, 1:30:00 a. m.");</script>
 <script>addRow("david-kushner-daylight.mp3","david-kushner-daylight.mp3",0,3408594,"3.3 MB",1704942187,"10/01/24, 10:03:07 p. m.");</script>
+<script>addRow("david-kushner-hero.mp3","david-kushner-hero.mp3",0,3340519,"3.2 MB",1717904426,"8/06/24, 10:40:26 p. m.");</script>
 <script>addRow("david-kushner-skin-and-bones.mp3","david-kushner-skin-and-bones.mp3",0,3435343,"3.3 MB",1705890055,"21/01/24, 9:20:55 p. m.");</script>
 <script>addRow("david-otero-estrellas-y-fantasmas.mp3","david-otero-estrellas-y-fantasmas.mp3",0,3409430,"3.3 MB",1710632782,"16/03/24, 6:46:22 p. m.");</script>
 <script>addRow("dayglow-can-i-call-you-tonight.mp3","dayglow-can-i-call-you-tonight.mp3",0,4598524,"4.4 MB",1693722600,"3/09/23, 1:30:00 a. m.");</script>
@@ -865,6 +876,7 @@ var loadTimeData;class LoadTimeData{constructor(){this.data_=null}set data(value
 <script>addRow("dayglow-medicine.mp3","dayglow-medicine.mp3",0,3723735,"3.6 MB",1693722600,"3/09/23, 1:30:00 a. m.");</script>
 <script>addRow("dayglow-nicknames.mp3","dayglow-nicknames.mp3",0,3263144,"3.1 MB",1693722600,"3/09/23, 1:30:00 a. m.");</script>
 <script>addRow("dayglow-run-the-world.mp3","dayglow-run-the-world.mp3",0,2836408,"2.7 MB",1693722600,"3/09/23, 1:30:00 a. m.");</script>
+<script>addRow("dei-v-clima.mp3","dei-v-clima.mp3",0,2626174,"2.5 MB",1717376324,"2/06/24, 7:58:44 p. m.");</script>
 <script>addRow("dei-v-martini.mp3","dei-v-martini.mp3",0,2631608,"2.5 MB",1714264681,"27/04/24, 7:38:01 p. m.");</script>
 <script>addRow("dei-v-x-bryant-myers-narcotics.mp3","dei-v-x-bryant-myers-narcotics.mp3",0,2785417,"2.7 MB",1695865888,"27/09/23, 8:51:28 p. m.");</script>
 <script>addRow("dekko-12x3.mp3","dekko-12x3.mp3",0,3757666,"3.6 MB",1693722600,"3/09/23, 1:30:00 a. m.");</script>
@@ -879,6 +891,7 @@ var loadTimeData;class LoadTimeData{constructor(){this.data_=null}set data(value
 <script>addRow("demi-lovato-cool-for-the-summer.mp3","demi-lovato-cool-for-the-summer.mp3",0,3411519,"3.3 MB",1693722601,"3/09/23, 1:30:01 a. m.");</script>
 <script>addRow("dennis-mc-kevin-o-chris-maluma-karol-g-ta-ok-remix.mp3","dennis-mc-kevin-o-chris-maluma-karol-g-ta-ok-remix.mp3",0,4138846,"3.9 MB",1693722601,"3/09/23, 1:30:01 a. m.");</script>
 <script>addRow("depol-de-fiesta.mp3","depol-de-fiesta.mp3",0,2869008,"2.7 MB",1700348622,"18/11/23, 6:03:42 p. m.");</script>
+<script>addRow("depol-dime-solo-si-has-pensao.mp3","depol-dime-solo-si-has-pensao.mp3",0,2813002,"2.7 MB",1717374832,"2/06/24, 7:33:52 p. m.");</script>
 <script>addRow("depol-ibiza.mp3","depol-ibiza.mp3",0,2866501,"2.7 MB",1693722601,"3/09/23, 1:30:01 a. m.");</script>
 <script>addRow("depol-que-bonita.mp3","depol-que-bonita.mp3",0,2621995,"2.5 MB",1693722601,"3/09/23, 1:30:01 a. m.");</script>
 <script>addRow("depol-quien-diria.mp3","depol-quien-diria.mp3",0,2943823,"2.8 MB",1693722601,"3/09/23, 1:30:01 a. m.");</script>
@@ -968,6 +981,7 @@ var loadTimeData;class LoadTimeData{constructor(){this.data_=null}set data(value
 <script>addRow("eiffel-65-blue-da-ba-dee.mp3","eiffel-65-blue-da-ba-dee.mp3",0,4523291,"4.3 MB",1693722603,"3/09/23, 1:30:03 a. m.");</script>
 <script>addRow("eladio-carrion-6pm-en-mallorca.mp3","eladio-carrion-6pm-en-mallorca.mp3",0,2314795,"2.2 MB",1693722603,"3/09/23, 1:30:03 a. m.");</script>
 <script>addRow("eladio-carrion-bendecido.mp3","eladio-carrion-bendecido.mp3",0,2285119,"2.2 MB",1705802138,"20/01/24, 8:55:38 p. m.");</script>
+<script>addRow("eladio-carrion-bzrp-music-sessions-vol-40.mp3","eladio-carrion-bzrp-music-sessions-vol-40.mp3",0,2639967,"2.5 MB",1716758395,"26/05/24, 4:19:55 p. m.");</script>
 <script>addRow("eladio-carrion-caras-vemos.mp3","eladio-carrion-caras-vemos.mp3",0,2502458,"2.4 MB",1693722603,"3/09/23, 1:30:03 a. m.");</script>
 <script>addRow("eladio-carrion-carta-a-dios.mp3","eladio-carrion-carta-a-dios.mp3",0,1935288,"1.8 MB",1693722603,"3/09/23, 1:30:03 a. m.");</script>
 <script>addRow("eladio-carrion-friends.mp3","eladio-carrion-friends.mp3",0,2651252,"2.5 MB",1693722603,"3/09/23, 1:30:03 a. m.");</script>
@@ -1016,6 +1030,7 @@ var loadTimeData;class LoadTimeData{constructor(){this.data_=null}set data(value
 <script>addRow("ember-island-umbrella.mp3","ember-island-umbrella.mp3",0,3645577,"3.5 MB",1693722604,"3/09/23, 1:30:04 a. m.");</script>
 <script>addRow("emilia-ludmilla-zecca-no-se-ve.mp3","emilia-ludmilla-zecca-no-se-ve.mp3",0,3259800,"3.1 MB",1693722604,"3/09/23, 1:30:04 a. m.");</script>
 <script>addRow("emilia-tini-la-original.mp3","emilia-tini-la-original.mp3",0,2251265,"2.1 MB",1699144677,"4/11/23, 7:37:57 p. m.");</script>
+<script>addRow("eminem-houdini.mp3","eminem-houdini.mp3",0,3637217,"3.5 MB",1717375202,"2/06/24, 7:40:02 p. m.");</script>
 <script>addRow("enrique-iglesias-ft-descemer-bueno-gente-de-zona-bailando.mp3","enrique-iglesias-ft-descemer-bueno-gente-de-zona-bailando.mp3",0,3893008,"3.7 MB",1693722604,"3/09/23, 1:30:04 a. m.");</script>
 <script>addRow("enrique-iglesias-maria-becerra-asi-es-la-vida.mp3","enrique-iglesias-maria-becerra-asi-es-la-vida.mp3",0,2713946,"2.6 MB",1698531455,"28/10/23, 5:17:35 p. m.");</script>
 <script>addRow("era-ameno.mp3","era-ameno.mp3",0,3765113,"3.6 MB",1693722604,"3/09/23, 1:30:04 a. m.");</script>
@@ -1081,6 +1096,7 @@ var loadTimeData;class LoadTimeData{constructor(){this.data_=null}set data(value
 <script>addRow("feid-si-te-la-encuentras-por-ahi.mp3","feid-si-te-la-encuentras-por-ahi.mp3",0,3066703,"2.9 MB",1693722605,"3/09/23, 1:30:05 a. m.");</script>
 <script>addRow("feid-si-tu-supieras.mp3","feid-si-tu-supieras.mp3",0,3147369,"3.0 MB",1693722605,"3/09/23, 1:30:05 a. m.");</script>
 <script>addRow("feid-sky-rompiendo-chimbita.mp3","feid-sky-rompiendo-chimbita.mp3",0,2508310,"2.4 MB",1693722605,"3/09/23, 1:30:05 a. m.");</script>
+<script>addRow("feid-sorry-4-that-much.mp3","feid-sorry-4-that-much.mp3",0,3325420,"3.2 MB",1717899451,"8/06/24, 9:17:31 p. m.");</script>
 <script>addRow("feid-te-mata.mp3","feid-te-mata.mp3",0,1811572,"1.7 MB",1693722605,"3/09/23, 1:30:05 a. m.");</script>
 <script>addRow("feid-tengo-fe.mp3","feid-tengo-fe.mp3",0,2345724,"2.2 MB",1693722605,"3/09/23, 1:30:05 a. m.");</script>
 <script>addRow("feid-totoy-el-frio-de-tanto-chimbiar.mp3","feid-totoy-el-frio-de-tanto-chimbiar.mp3",0,2978514,"2.8 MB",1693722605,"3/09/23, 1:30:05 a. m.");</script>
@@ -1127,6 +1143,7 @@ var loadTimeData;class LoadTimeData{constructor(){this.data_=null}set data(value
 <script>addRow("gorillaz-ft-tame-impala-bootie-brown-new-gold.mp3","gorillaz-ft-tame-impala-bootie-brown-new-gold.mp3",0,3458331,"3.3 MB",1693722606,"3/09/23, 1:30:06 a. m.");</script>
 <script>addRow("gotye-ft-kimbra-somebody-that-i-used-to-know.mp3","gotye-ft-kimbra-somebody-that-i-used-to-know.mp3",0,3904293,"3.7 MB",1693722606,"3/09/23, 1:30:06 a. m.");</script>
 <script>addRow("griff-one-night.mp3","griff-one-night.mp3",0,2751980,"2.6 MB",1693722606,"3/09/23, 1:30:06 a. m.");</script>
+<script>addRow("grupo-firme-el-beneficio-de-la-duda.mp3","grupo-firme-el-beneficio-de-la-duda.mp3",0,3929789,"3.7 MB",1717375744,"2/06/24, 7:49:04 p. m.");</script>
 <script>addRow("grupo-frontera-ft-maluma-por-que-sera.mp3","grupo-frontera-ft-maluma-por-que-sera.mp3",0,3353423,"3.2 MB",1716161680,"19/05/24, 6:34:40 p. m.");</script>
 <script>addRow("grupo-frontera-ft-morat-los-dos.mp3","grupo-frontera-ft-morat-los-dos.mp3",0,3437433,"3.3 MB",1715477096,"11/05/24, 8:24:56 p. m.");</script>
 <script>addRow("grupo-frontera-ft-nicki-nicole-desquite.mp3","grupo-frontera-ft-nicki-nicole-desquite.mp3",0,3242246,"3.1 MB",1716165233,"19/05/24, 7:33:53 p. m.");</script>
@@ -1153,6 +1170,7 @@ var loadTimeData;class LoadTimeData{constructor(){this.data_=null}set data(value
 <script>addRow("hippie-sabotage-devil-eyes.mp3","hippie-sabotage-devil-eyes.mp3",0,3701165,"3.5 MB",1693722606,"3/09/23, 1:30:06 a. m.");</script>
 <script>addRow("homie!-piso-21-ojala-pudiera.mp3","homie!-piso-21-ojala-pudiera.mp3",0,3724153,"3.6 MB",1693722606,"3/09/23, 1:30:06 a. m.");</script>
 <script>addRow("hozier-take-me-to-church.mp3","hozier-take-me-to-church.mp3",0,3775980,"3.6 MB",1693722607,"3/09/23, 1:30:07 a. m.");</script>
+<script>addRow("ian-lucas-x-fede-vigevani-x-gusty-dj-tiktok.mp3","ian-lucas-x-fede-vigevani-x-gusty-dj-tiktok.mp3",0,2448959,"2.3 MB",1717375375,"2/06/24, 7:42:55 p. m.");</script>
 <script>addRow("ice-spice-&-nicki-minaj-princess-diana.mp3","ice-spice-&-nicki-minaj-princess-diana.mp3",0,2755741,"2.6 MB",1693722607,"3/09/23, 1:30:07 a. m.");</script>
 <script>addRow("igante-x-tame-impala.mp3","igante-x-tame-impala.mp3",0,2137162,"2.0 MB",1693722607,"3/09/23, 1:30:07 a. m.");</script>
 <script>addRow("imagine-dragons-believer.mp3","imagine-dragons-believer.mp3",0,3466690,"3.3 MB",1693722607,"3/09/23, 1:30:07 a. m.");</script>
@@ -1164,6 +1182,7 @@ var loadTimeData;class LoadTimeData{constructor(){this.data_=null}set data(value
 <script>addRow("ingratax-paris.mp3","ingratax-paris.mp3",0,2380832,"2.3 MB",1693722607,"3/09/23, 1:30:07 a. m.");</script>
 <script>addRow("inigo-quintero-si-no-estas.mp3","inigo-quintero-si-no-estas.mp3",0,2946749,"2.8 MB",1696389036,"3/10/23, 10:10:36 p. m.");</script>
 <script>addRow("inner-circle-sweat-a-la-la-la-la-long.mp3","inner-circle-sweat-a-la-la-la-la-long.mp3",0,3634710,"3.5 MB",1693722607,"3/09/23, 1:30:07 a. m.");</script>
+<script>addRow("izaak-anuel-aa-xqcp.mp3","izaak-anuel-aa-xqcp.mp3",0,3498037,"3.3 MB",1717900477,"8/06/24, 9:34:37 p. m.");</script>
 <script>addRow("izaak-jhayco-anuel-aa-bby-boo-remix.mp3","izaak-jhayco-anuel-aa-bby-boo-remix.mp3",0,4415039,"4.2 MB",1711902570,"31/03/24, 11:29:30 a. m.");</script>
 <script>addRow("izaak-luar-la-l-omar-courtz-bonnie-&-clyde-remix.mp3","izaak-luar-la-l-omar-courtz-bonnie-&-clyde-remix.mp3",0,4581805,"4.4 MB",1701617470,"3/12/23, 10:31:10 a. m.");</script>
 <script>addRow("j-abdiel-de-la-rose-yan-block-jay-wheeler-izaak-wya-remix-red.mp3","j-abdiel-de-la-rose-yan-block-jay-wheeler-izaak-wya-remix-red.mp3",0,5149394,"4.9 MB",1716160687,"19/05/24, 6:18:07 p. m.");</script>
@@ -1192,6 +1211,7 @@ var loadTimeData;class LoadTimeData{constructor(){this.data_=null}set data(value
 <script>addRow("j-balvin-&-ed-sheeran-sigue.mp3","j-balvin-&-ed-sheeran-sigue.mp3",0,2525028,"2.4 MB",1693722607,"3/09/23, 1:30:07 a. m.");</script>
 <script>addRow("j-balvin-amigos.mp3","j-balvin-amigos.mp3",0,3122710,"3.0 MB",1702168291,"9/12/23, 7:31:31 p. m.");</script>
 <script>addRow("j-balvin-bad-bunny-la-cancion.mp3","j-balvin-bad-bunny-la-cancion.mp3",0,3903039,"3.7 MB",1693722607,"3/09/23, 1:30:07 a. m.");</script>
+<script>addRow("j-balvin-chencho-corleone-polvo-de-tu-vida.mp3","j-balvin-chencho-corleone-polvo-de-tu-vida.mp3",0,2755324,"2.6 MB",1717901517,"8/06/24, 9:51:57 p. m.");</script>
 <script>addRow("j-balvin-de-la-ghetto-jowell-&-randy-triple-s.mp3","j-balvin-de-la-ghetto-jowell-&-randy-triple-s.mp3",0,3085511,"2.9 MB",1709505202,"3/03/24, 5:33:22 p. m.");</script>
 <script>addRow("j-balvin-dua-lipa-bad-bunny-tainy-un-dia-one-day.mp3","j-balvin-dua-lipa-bad-bunny-tainy-un-dia-one-day.mp3",0,3712450,"3.5 MB",1693722607,"3/09/23, 1:30:07 a. m.");</script>
 <script>addRow("j-balvin-maria-becerra-que-mas-pues.mp3","j-balvin-maria-becerra-que-mas-pues.mp3",0,3475885,"3.3 MB",1693722607,"3/09/23, 1:30:07 a. m.");</script>
@@ -1247,6 +1267,7 @@ var loadTimeData;class LoadTimeData{constructor(){this.data_=null}set data(value
 <script>addRow("julie-bergan-kiss-somebody.mp3","julie-bergan-kiss-somebody.mp3",0,2268819,"2.2 MB",1693722609,"3/09/23, 1:30:09 a. m.");</script>
 <script>addRow("jung-kook-ft-latto-seven.mp3","jung-kook-ft-latto-seven.mp3",0,2948003,"2.8 MB",1693722609,"3/09/23, 1:30:09 a. m.");</script>
 <script>addRow("jung-kook-hate-you.mp3","jung-kook-hate-you.mp3",0,2469021,"2.4 MB",1702169376,"9/12/23, 7:49:36 p. m.");</script>
+<script>addRow("jung-kook-never-let-go.mp3","jung-kook-never-let-go.mp3",0,2670478,"2.5 MB",1717902335,"8/06/24, 10:05:35 p. m.");</script>
 <script>addRow("junior-h-x-peso-pluma-a-tu-manera.mp3","junior-h-x-peso-pluma-a-tu-manera.mp3",0,4178475,"4.0 MB",1708478951,"20/02/24, 8:29:11 p. m.");</script>
 <script>addRow("junior-h-x-peso-pluma-el-azul.mp3","junior-h-x-peso-pluma-el-azul.mp3",0,2987291,"2.8 MB",1693722609,"3/09/23, 1:30:09 a. m.");</script>
 <script>addRow("justin-bieber-ft-daniel-caesar-giveon-peaches.mp3","justin-bieber-ft-daniel-caesar-giveon-peaches.mp3",0,3167431,"3.0 MB",1693722609,"3/09/23, 1:30:09 a. m.");</script>
@@ -1283,6 +1304,7 @@ var loadTimeData;class LoadTimeData{constructor(){this.data_=null}set data(value
 <script>addRow("kany-garcia-garcia.mp3","kany-garcia-garcia.mp3",0,2605276,"2.5 MB",1714865807,"4/05/24, 6:36:47 p. m.");</script>
 <script>addRow("kany-garcia-young-miko-en-esta-boca.mp3","kany-garcia-young-miko-en-esta-boca.mp3",0,2733172,"2.6 MB",1708876388,"25/02/24, 10:53:08 a. m.");</script>
 <script>addRow("karbeats-mora-jhayco-ft-yan-block-omar-courtz-donde-crj-remix.mp3","karbeats-mora-jhayco-ft-yan-block-omar-courtz-donde-crj-remix.mp3",0,4109929,"3.9 MB",1693722611,"3/09/23, 1:30:11 a. m.");</script>
+<script>addRow("karly-b-besos-con-veneno.mp3","karly-b-besos-con-veneno.mp3",0,2703497,"2.6 MB",1716759707,"26/05/24, 4:41:47 p. m.");</script>
 <script>addRow("karly-b-buenota.mp3","karly-b-buenota.mp3",0,3009025,"2.9 MB",1711299184,"24/03/24, 11:53:04 a. m.");</script>
 <script>addRow("karol-g-200-copas.mp3","karol-g-200-copas.mp3",0,3439523,"3.3 MB",1693722611,"3/09/23, 1:30:11 a. m.");</script>
 <script>addRow("karol-g-amargura.mp3","karol-g-amargura.mp3",0,2729410,"2.6 MB",1693722611,"3/09/23, 1:30:11 a. m.");</script>
@@ -1321,6 +1343,7 @@ var loadTimeData;class LoadTimeData{constructor(){this.data_=null}set data(value
 <script>addRow("katy-perry-this-is-how-we-do.mp3","katy-perry-this-is-how-we-do.mp3",0,3353841,"3.2 MB",1693722612,"3/09/23, 1:30:12 a. m.");</script>
 <script>addRow("katy-perry-wide-awake.mp3","katy-perry-wide-awake.mp3",0,3550282,"3.4 MB",1693722612,"3/09/23, 1:30:12 a. m.");</script>
 <script>addRow("keityn-nueva-version.mp3","keityn-nueva-version.mp3",0,2659193,"2.5 MB",1693722612,"3/09/23, 1:30:12 a. m.");</script>
+<script>addRow("kenia-os-yeri-mua-ghetto-kids-mamita-rica.mp3","kenia-os-yeri-mua-ghetto-kids-mamita-rica.mp3",0,2858977,"2.7 MB",1717376539,"2/06/24, 8:02:19 p. m.");</script>
 <script>addRow("kenya-grace-strangers.mp3","kenya-grace-strangers.mp3",0,2769116,"2.6 MB",1699146010,"4/11/23, 8:00:10 p. m.");</script>
 <script>addRow("kevin-roldan-almighty-tu-silueta.mp3","kevin-roldan-almighty-tu-silueta.mp3",0,3183314,"3.0 MB",1693722612,"3/09/23, 1:30:12 a. m.");</script>
 <script>addRow("kevin-roldan-bryant-myers-after-party.mp3","kevin-roldan-bryant-myers-after-party.mp3",0,3372231,"3.2 MB",1693722612,"3/09/23, 1:30:12 a. m.");</script>
@@ -1342,6 +1365,7 @@ var loadTimeData;class LoadTimeData{constructor(){this.data_=null}set data(value
 <script>addRow("kygo-ft-justin-jesso-stargazing.mp3","kygo-ft-justin-jesso-stargazing.mp3",0,3791444,"3.6 MB",1693722612,"3/09/23, 1:30:12 a. m.");</script>
 <script>addRow("kygo-ft-parson-james-stole-the-show.mp3","kygo-ft-parson-james-stole-the-show.mp3",0,3494693,"3.3 MB",1693722612,"3/09/23, 1:30:12 a. m.");</script>
 <script>addRow("la-banda-del-5-ft-andy-rivera-dekko-la-rompecorazones-remix.mp3","la-banda-del-5-ft-andy-rivera-dekko-la-rompecorazones-remix.mp3",0,3637635,"3.5 MB",1693722612,"3/09/23, 1:30:12 a. m.");</script>
+<script>addRow("la-beba-toxica-y-cara.mp3","la-beba-toxica-y-cara.mp3",0,2592737,"2.5 MB",1716757917,"26/05/24, 4:11:57 p. m.");</script>
 <script>addRow("labrinth-still-dont-know-my-name.mp3","labrinth-still-dont-know-my-name.mp3",0,2454811,"2.3 MB",1693722613,"3/09/23, 1:30:13 a. m.");</script>
 <script>addRow("lady-gaga-bloody-mary.mp3","lady-gaga-bloody-mary.mp3",0,3919340,"3.7 MB",1693722613,"3/09/23, 1:30:13 a. m.");</script>
 <script>addRow("lady-gaga-bradley-cooper-shallow.mp3","lady-gaga-bradley-cooper-shallow.mp3",0,3477139,"3.3 MB",1693722613,"3/09/23, 1:30:13 a. m.");</script>
@@ -1379,6 +1403,7 @@ var loadTimeData;class LoadTimeData{constructor(){this.data_=null}set data(value
 <script>addRow("lil-nas-x-j-christ.mp3","lil-nas-x-j-christ.mp3",0,2461916,"2.3 MB",1705810383,"20/01/24, 11:13:03 p. m.");</script>
 <script>addRow("lil-nas-x-montero-call-me-by-your-name.mp3","lil-nas-x-montero-call-me-by-your-name.mp3",0,2209469,"2.1 MB",1693722615,"3/09/23, 1:30:15 a. m.");</script>
 <script>addRow("lil-nas-x-thats-what-i-want.mp3","lil-nas-x-thats-what-i-want.mp3",0,2303928,"2.2 MB",1693722615,"3/09/23, 1:30:15 a. m.");</script>
+<script>addRow("lismar-bzrp-music-sessions-vol-60.mp3","lismar-bzrp-music-sessions-vol-60.mp3",0,2749054,"2.6 MB",1716759237,"26/05/24, 4:33:57 p. m.");</script>
 <script>addRow("lit-killah-duki-emilia-tiago-pzk-fmk-rusherking-maria-becerra-big-one-los-del-espacio.mp3","lit-killah-duki-emilia-tiago-pzk-fmk-rusherking-maria-becerra-big-one-los-del-espacio.mp3",0,5409782,"5.2 MB",1693722615,"3/09/23, 1:30:15 a. m.");</script>
 <script>addRow("lit-killah-facetime.mp3","lit-killah-facetime.mp3",0,2438928,"2.3 MB",1703652979,"26/12/23, 11:56:19 p. m.");</script>
 <script>addRow("lit-killah-milo-j-ronny-j-carta-de-despedida.mp3","lit-killah-milo-j-ronny-j-carta-de-despedida.mp3",0,2958452,"2.8 MB",1711928436,"31/03/24, 6:40:36 p. m.");</script>
@@ -1402,6 +1427,7 @@ var loadTimeData;class LoadTimeData{constructor(){this.data_=null}set data(value
 <script>addRow("lua-pensando-en-ti.mp3","lua-pensando-en-ti.mp3",0,2823033,"2.7 MB",1693722616,"3/09/23, 1:30:16 a. m.");</script>
 <script>addRow("luar-la-l-ft-tito-el-bambino-de-la-ghetto-jowell-caile-remix.mp3","luar-la-l-ft-tito-el-bambino-de-la-ghetto-jowell-caile-remix.mp3",0,3255621,"3.1 MB",1693722616,"3/09/23, 1:30:16 a. m.");</script>
 <script>addRow("luar-la-l-x-ozuna-otra-vibra.mp3","luar-la-l-x-ozuna-otra-vibra.mp3",0,3324166,"3.2 MB",1693722616,"3/09/23, 1:30:16 a. m.");</script>
+<script>addRow("luck-ra-maluma-khea-hola-perdida-remix.mp3","luck-ra-maluma-khea-hola-perdida-remix.mp3",0,3207555,"3.1 MB",1717375890,"2/06/24, 7:51:30 p. m.");</script>
 <script>addRow("luis-fonsi-la-romana.mp3","luis-fonsi-la-romana.mp3",0,2495353,"2.4 MB",1708479674,"20/02/24, 8:41:14 p. m.");</script>
 <script>addRow("lukas-graham-7-years.mp3","lukas-graham-7-years.mp3",0,3751738,"3.6 MB",1693722616,"3/09/23, 1:30:16 a. m.");</script>
 <script>addRow("lunay-yovngchimi-nuevo.mp3","lunay-yovngchimi-nuevo.mp3",0,2231203,"2.1 MB",1693722616,"3/09/23, 1:30:16 a. m.");</script>
@@ -1418,6 +1444,8 @@ var loadTimeData;class LoadTimeData{constructor(){this.data_=null}set data(value
 <script>addRow("maldy-ryan-castro-chichi-pana.mp3","maldy-ryan-castro-chichi-pana.mp3",0,2897848,"2.8 MB",1699754777,"11/11/23, 9:06:17 p. m.");</script>
 <script>addRow("maldy-tiempos-de-plan-b.mp3","maldy-tiempos-de-plan-b.mp3",0,2599007,"2.5 MB",1693722617,"3/09/23, 1:30:17 a. m.");</script>
 <script>addRow("maluma-anuel-aa-diablo-que-chimba.mp3","maluma-anuel-aa-diablo-que-chimba.mp3",0,3717048,"3.5 MB",1693722617,"3/09/23, 1:30:17 a. m.");</script>
+<script>addRow("maluma-blessd-1-of-1.mp3","maluma-blessd-1-of-1.mp3",0,3541087,"3.4 MB",1717899837,"8/06/24, 9:23:57 p. m.");</script>
+<script>addRow("maluma-blessd-call-me.mp3","maluma-blessd-call-me.mp3",0,2721469,"2.6 MB",1717899664,"8/06/24, 9:21:04 p. m.");</script>
 <script>addRow("maluma-carin-leon-segun-quien.mp3","maluma-carin-leon-segun-quien.mp3",0,2305802,"2.2 MB",1693722617,"3/09/23, 1:30:17 a. m.");</script>
 <script>addRow("maluma-chencho-corleone-nos-comemos-vivos.mp3","maluma-chencho-corleone-nos-comemos-vivos.mp3",0,3573688,"3.4 MB",1693722617,"3/09/23, 1:30:17 a. m.");</script>
 <script>addRow("maluma-coco-loco.mp3","maluma-coco-loco.mp3",0,2669224,"2.5 MB",1693722617,"3/09/23, 1:30:17 a. m.");</script>
@@ -1468,9 +1496,11 @@ var loadTimeData;class LoadTimeData{constructor(){this.data_=null}set data(value
 <script>addRow("marshmello-tiago-pzk-como-yo.mp3","marshmello-tiago-pzk-como-yo.mp3",0,2271327,"2.2 MB",1693722619,"3/09/23, 1:30:19 a. m.");</script>
 <script>addRow("marshmello-young-miko-tempo.mp3","marshmello-young-miko-tempo.mp3",0,1749414,"1.7 MB",1693722619,"3/09/23, 1:30:19 a. m.");</script>
 <script>addRow("martin-garrix-&-dua-lipa-scared-to-be-lonely.mp3","martin-garrix-&-dua-lipa-scared-to-be-lonely.mp3",0,3577449,"3.4 MB",1693722619,"3/09/23, 1:30:19 a. m.");</script>
+<script>addRow("martin-garrix-&-dubvision-ft-shaun-farrugia-wherever-you-are.mp3","martin-garrix-&-dubvision-ft-shaun-farrugia-wherever-you-are.mp3",0,3329599,"3.2 MB",1718157010,"11/06/24, 8:50:10 p. m.");</script>
 <script>addRow("martin-garrix-&-lloyiso-real-love.mp3","martin-garrix-&-lloyiso-real-love.mp3",0,2609456,"2.5 MB",1697331677,"14/10/23, 8:01:17 p. m.");</script>
 <script>addRow("martin-garrix-&-troye-sivan-there-for-you.mp3","martin-garrix-&-troye-sivan-there-for-you.mp3",0,3524368,"3.4 MB",1693722619,"3/09/23, 1:30:19 a. m.");</script>
 <script>addRow("martin-garrix-bebe-rexha-in-the-name-of-love.mp3","martin-garrix-bebe-rexha-in-the-name-of-love.mp3",0,3132741,"3.0 MB",1693722619,"3/09/23, 1:30:19 a. m.");</script>
+<script>addRow("martin-garrix-x-jvke-hero.mp3","martin-garrix-x-jvke-hero.mp3",0,2572675,"2.5 MB",1718158013,"11/06/24, 9:06:53 p. m.");</script>
 <script>addRow("martin-solveig-&dragonette-hello.mp3","martin-solveig-&dragonette-hello.mp3",0,4509498,"4.3 MB",1697589310,"17/10/23, 7:35:10 p. m.");</script>
 <script>addRow("master-kg-ft-nomcebo-zikode-jerusalema.mp3","master-kg-ft-nomcebo-zikode-jerusalema.mp3",0,5494210,"5.2 MB",1693722619,"3/09/23, 1:30:19 a. m.");</script>
 <script>addRow("maxiolly-blessd-adso-parcera.mp3","maxiolly-blessd-adso-parcera.mp3",0,3449356,"3.3 MB",1693722619,"3/09/23, 1:30:19 a. m.");</script>
@@ -1497,6 +1527,7 @@ var loadTimeData;class LoadTimeData{constructor(){this.data_=null}set data(value
 <script>addRow("miki-nunez-dime-que-no-duele.mp3","miki-nunez-dime-que-no-duele.mp3",0,2919999,"2.8 MB",1693722620,"3/09/23, 1:30:20 a. m.");</script>
 <script>addRow("miki-nunez-entre-un-millon.mp3","miki-nunez-entre-un-millon.mp3",0,3193345,"3.0 MB",1693722620,"3/09/23, 1:30:20 a. m.");</script>
 <script>addRow("miki-nunez-sin-noticias-de-gurb.mp3","miki-nunez-sin-noticias-de-gurb.mp3",0,3752992,"3.6 MB",1693722620,"3/09/23, 1:30:20 a. m.");</script>
+<script>addRow("miky-woodz-ryan-castro-parchar.mp3","miky-woodz-ryan-castro-parchar.mp3",0,2882801,"2.7 MB",1717375984,"2/06/24, 7:53:04 p. m.");</script>
 <script>addRow("miley-cyrus-flowers.mp3","miley-cyrus-flowers.mp3",0,3208809,"3.1 MB",1693722620,"3/09/23, 1:30:20 a. m.");</script>
 <script>addRow("miley-cyrus-midnight-sky.mp3","miley-cyrus-midnight-sky.mp3",0,3578703,"3.4 MB",1693722620,"3/09/23, 1:30:20 a. m.");</script>
 <script>addRow("miley-cyrus-river.mp3","miley-cyrus-river.mp3",0,2582706,"2.5 MB",1693722620,"3/09/23, 1:30:20 a. m.");</script>
@@ -1578,6 +1609,7 @@ var loadTimeData;class LoadTimeData{constructor(){this.data_=null}set data(value
 <script>addRow("myke-towers-ritual.mp3","myke-towers-ritual.mp3",0,2473201,"2.4 MB",1701136359,"27/11/23, 8:52:39 p. m.");</script>
 <script>addRow("myke-towers-solo-$exo.mp3","myke-towers-solo-$exo.mp3",0,3026161,"2.9 MB",1693722621,"3/09/23, 1:30:21 a. m.");</script>
 <script>addRow("myke-towers-te-conozco.mp3","myke-towers-te-conozco.mp3",0,2697227,"2.6 MB",1701136050,"27/11/23, 8:47:30 p. m.");</script>
+<script>addRow("myles-smith-stargazing.mp3","myles-smith-stargazing.mp3",0,2762011,"2.6 MB",1717903401,"8/06/24, 10:23:21 p. m.");</script>
 <script>addRow("nanpa-basico-ft-ryan-castro-idilio.mp3","nanpa-basico-ft-ryan-castro-idilio.mp3",0,2637459,"2.5 MB",1693722621,"3/09/23, 1:30:21 a. m.");</script>
 <script>addRow("natalia-lacunza-cuestion-de-suerte.mp3","natalia-lacunza-cuestion-de-suerte.mp3",0,3638053,"3.5 MB",1693722621,"3/09/23, 1:30:21 a. m.");</script>
 <script>addRow("natalia-lacunza-todo-lamento.mp3","natalia-lacunza-todo-lamento.mp3",0,2492009,"2.4 MB",1693722622,"3/09/23, 1:30:22 a. m.");</script>
@@ -1589,6 +1621,9 @@ var loadTimeData;class LoadTimeData{constructor(){this.data_=null}set data(value
 <script>addRow("natan-y-shander-feid-ryan-castro-totoy-el-frio-vip.mp3","natan-y-shander-feid-ryan-castro-totoy-el-frio-vip.mp3",0,3921848,"3.7 MB",1693722622,"3/09/23, 1:30:22 a. m.");</script>
 <script>addRow("nath-x-pirlo-x-cheztom-klkntoki.mp3","nath-x-pirlo-x-cheztom-klkntoki.mp3",0,3227617,"3.1 MB",1695865279,"27/09/23, 8:41:19 p. m.");</script>
 <script>addRow("nath-x-ryan-castro-deseandote.mp3","nath-x-ryan-castro-deseandote.mp3",0,2945495,"2.8 MB",1693722622,"3/09/23, 1:30:22 a. m.");</script>
+<script>addRow("nathy-peluso-aprender-a-amar.mp3","nathy-peluso-aprender-a-amar.mp3",0,1599248,"1.5 MB",1716762261,"26/05/24, 5:24:21 p. m.");</script>
+<script>addRow("nathy-peluso-ca7riel-&-paco-amoroso-todo-roto.mp3","nathy-peluso-ca7riel-&-paco-amoroso-todo-roto.mp3",0,3001501,"2.9 MB",1716762558,"26/05/24, 5:29:18 p. m.");</script>
+<script>addRow("nathy-peluso-duki-manhattan.mp3","nathy-peluso-duki-manhattan.mp3",0,3080496,"2.9 MB",1716762365,"26/05/24, 5:26:05 p. m.");</script>
 <script>addRow("nathy-peluso-salvaje.mp3","nathy-peluso-salvaje.mp3",0,3288639,"3.1 MB",1693722622,"3/09/23, 1:30:22 a. m.");</script>
 <script>addRow("nathy-peluso-tonta.mp3","nathy-peluso-tonta.mp3",0,3263562,"3.1 MB",1693722622,"3/09/23, 1:30:22 a. m.");</script>
 <script>addRow("natti-natasha-no-pare.mp3","natti-natasha-no-pare.mp3",0,2491591,"2.4 MB",1693722622,"3/09/23, 1:30:22 a. m.");</script>
@@ -1718,6 +1753,7 @@ var loadTimeData;class LoadTimeData{constructor(){this.data_=null}set data(value
 <script>addRow("paulo-londra-ojala.mp3","paulo-londra-ojala.mp3",0,2652088,"2.5 MB",1693722625,"3/09/23, 1:30:25 a. m.");</script>
 <script>addRow("paulo-londra-plan-a.mp3","paulo-londra-plan-a.mp3",0,2846857,"2.7 MB",1693722626,"3/09/23, 1:30:26 a. m.");</script>
 <script>addRow("paulo-londra-por-deporte.mp3","paulo-londra-por-deporte.mp3",0,2794194,"2.7 MB",1693722626,"3/09/23, 1:30:26 a. m.");</script>
+<script>addRow("paulo-londra-posdata.mp3","paulo-londra-posdata.mp3",0,2708094,"2.6 MB",1717375453,"2/06/24, 7:44:13 p. m.");</script>
 <script>addRow("paulo-londra-tal-vez.mp3","paulo-londra-tal-vez.mp3",0,4234481,"4.0 MB",1693722626,"3/09/23, 1:30:26 a. m.");</script>
 <script>addRow("paulo-londra-tenso.mp3","paulo-londra-tenso.mp3",0,2723141,"2.6 MB",1693722626,"3/09/23, 1:30:26 a. m.");</script>
 <script>addRow("peggy-gou-it-goes-like-nanana.mp3","peggy-gou-it-goes-like-nanana.mp3",0,3710778,"3.5 MB",1693785001,"3/09/23, 6:50:01 p. m.");</script>
@@ -1741,6 +1777,7 @@ var loadTimeData;class LoadTimeData{constructor(){this.data_=null}set data(value
 <script>addRow("pharrell-williams-miley-cyrus-doctor-work-it-out.mp3","pharrell-williams-miley-cyrus-doctor-work-it-out.mp3",0,2917074,"2.8 MB",1709506274,"3/03/24, 5:51:14 p. m.");</script>
 <script>addRow("pignoise-huesos.mp3","pignoise-huesos.mp3",0,2986873,"2.8 MB",1693722627,"3/09/23, 1:30:27 a. m.");</script>
 <script>addRow("pignoise-una-sensacion.mp3","pignoise-una-sensacion.mp3",0,3158654,"3.0 MB",1693722628,"3/09/23, 1:30:28 a. m.");</script>
+<script>addRow("pirlo-ft-jc-reyes-droga.mp3","pirlo-ft-jc-reyes-droga.mp3",0,2827640,"2.7 MB",1717901968,"8/06/24, 9:59:28 p. m.");</script>
 <script>addRow("pirlo-ft-noriel-caramelo.mp3","pirlo-ft-noriel-caramelo.mp3",0,3861661,"3.7 MB",1710037477,"9/03/24, 9:24:37 p. m.");</script>
 <script>addRow("pirlo-ft-ovi-blessd-gangsters-en-la-disco.mp3","pirlo-ft-ovi-blessd-gangsters-en-la-disco.mp3",0,3092617,"2.9 MB",1710037054,"9/03/24, 9:17:34 p. m.");</script>
 <script>addRow("piso-21-&-ryan-castro-3-21.mp3","piso-21-&-ryan-castro-3-21.mp3",0,2671314,"2.5 MB",1693722628,"3/09/23, 1:30:28 a. m.");</script>
@@ -1757,6 +1794,7 @@ var loadTimeData;class LoadTimeData{constructor(){this.data_=null}set data(value
 <script>addRow("polima-westcoast-nicky-jam-ganas.mp3","polima-westcoast-nicky-jam-ganas.mp3",0,2716035,"2.6 MB",1693722628,"3/09/23, 1:30:28 a. m.");</script>
 <script>addRow("polima-westcoast-pailita-paloma-mami-feid-de-la-ghetto-ultra-solo-remix.mp3","polima-westcoast-pailita-paloma-mami-feid-de-la-ghetto-ultra-solo-remix.mp3",0,5163604,"4.9 MB",1693722628,"3/09/23, 1:30:28 a. m.");</script>
 <script>addRow("polima-westcoast-young-cister-vogue.mp3","polima-westcoast-young-cister-vogue.mp3",0,2861679,"2.7 MB",1714185723,"26/04/24, 9:42:03 p. m.");</script>
+<script>addRow("polo-nandez-&-mar-lucas-parte-de-mi.mp3","polo-nandez-&-mar-lucas-parte-de-mi.mp3",0,2559719,"2.4 MB",1717898110,"8/06/24, 8:55:10 p. m.");</script>
 <script>addRow("polo-nandez-&-zeper-latidos.mp3","polo-nandez-&-zeper-latidos.mp3",0,3245590,"3.1 MB",1693722628,"3/09/23, 1:30:28 a. m.");</script>
 <script>addRow("polo-nandez-quiero-que-vuelvas.mp3","polo-nandez-quiero-que-vuelvas.mp3",0,2902863,"2.8 MB",1693722628,"3/09/23, 1:30:28 a. m.");</script>
 <script>addRow("porta-cosas-de-la-vida.mp3","porta-cosas-de-la-vida.mp3",0,6386971,"6.1 MB",1693722628,"3/09/23, 1:30:28 a. m.");</script>
@@ -1806,6 +1844,7 @@ var loadTimeData;class LoadTimeData{constructor(){this.data_=null}set data(value
 <script>addRow("rauw-alejandro-ron-cola.mp3","rauw-alejandro-ron-cola.mp3",0,2996486,"2.9 MB",1693722631,"3/09/23, 1:30:31 a. m.");</script>
 <script>addRow("rauw-alejandro-sexo-virtual.mp3","rauw-alejandro-sexo-virtual.mp3",0,3319986,"3.2 MB",1693722631,"3/09/23, 1:30:31 a. m.");</script>
 <script>addRow("rauw-alejandro-todo-de-ti.mp3","rauw-alejandro-todo-de-ti.mp3",0,3245590,"3.1 MB",1693722631,"3/09/23, 1:30:31 a. m.");</script>
+<script>addRow("rauw-alejandro-touching-the-sky.mp3","rauw-alejandro-touching-the-sky.mp3",0,3001919,"2.9 MB",1717897985,"8/06/24, 8:53:05 p. m.");</script>
 <script>addRow("rauw-alejandro-x-baby-rasta-punto-40.mp3","rauw-alejandro-x-baby-rasta-punto-40.mp3",0,3052492,"2.9 MB",1693722631,"3/09/23, 1:30:31 a. m.");</script>
 <script>addRow("rauw-alejandro-x-chencho-corleone-desesperados.mp3","rauw-alejandro-x-chencho-corleone-desesperados.mp3",0,5423428,"5.2 MB",1693722631,"3/09/23, 1:30:31 a. m.");</script>
 <script>addRow("rauw-alejandro-x-daddy-yankee-panties-y-brasieres.mp3","rauw-alejandro-x-daddy-yankee-panties-y-brasieres.mp3",0,3159908,"3.0 MB",1693722631,"3/09/23, 1:30:31 a. m.");</script>
@@ -1839,6 +1878,7 @@ var loadTimeData;class LoadTimeData{constructor(){this.data_=null}set data(value
 <script>addRow("riton-x-nightcrawlers-ft-mufasa-hypeman-friday.mp3","riton-x-nightcrawlers-ft-mufasa-hypeman-friday.mp3",0,2830974,"2.7 MB",1693722631,"3/09/23, 1:30:31 a. m.");</script>
 <script>addRow("rkm-y-ken-y-igual-que-ayer.mp3","rkm-y-ken-y-igual-que-ayer.mp3",0,3692388,"3.5 MB",1693722631,"3/09/23, 1:30:31 a. m.");</script>
 <script>addRow("rm-come-back-to-me.mp3","rm-come-back-to-me.mp3",0,6226197,"5.9 MB",1715475834,"11/05/24, 8:03:54 p. m.");</script>
+<script>addRow("rm-lost!.mp3","rm-lost!.mp3",0,3729586,"3.6 MB",1716760422,"26/05/24, 4:53:42 p. m.");</script>
 <script>addRow("roa-hades66-luar-la-l-uuu-2.mp3","roa-hades66-luar-la-l-uuu-2.mp3",0,4939996,"4.7 MB",1702169353,"9/12/23, 7:49:13 p. m.");</script>
 <script>addRow("robin-schulz-alle-farbenIsrael-over-the-rainbow-wonderful-world.mp3","robin-schulz-alle-farbenIsrael-over-the-rainbow-wonderful-world.mp3",0,3347572,"3.2 MB",1693722631,"3/09/23, 1:30:31 a. m.");</script>
 <script>addRow("robin-schulz-ft-erika-sirola-speechless.mp3","robin-schulz-ft-erika-sirola-speechless.mp3",0,3340884,"3.2 MB",1693722631,"3/09/23, 1:30:31 a. m.");</script>
@@ -1888,6 +1928,7 @@ var loadTimeData;class LoadTimeData{constructor(){this.data_=null}set data(value
 <script>addRow("ryan-castro-sog-nea.mp3","ryan-castro-sog-nea.mp3",0,2746128,"2.6 MB",1693722633,"3/09/23, 1:30:33 a. m.");</script>
 <script>addRow("ryan-castro-wasa-wasa.mp3","ryan-castro-wasa-wasa.mp3",0,2331095,"2.2 MB",1693722633,"3/09/23, 1:30:33 a. m.");</script>
 <script>addRow("sabrina-carpenter-feather.mp3","sabrina-carpenter-feather.mp3",0,2970155,"2.8 MB",1699063577,"3/11/23, 9:06:17 p. m.");</script>
+<script>addRow("sabrina-carpenter-please-please-please.mp3","sabrina-carpenter-please-please-please.mp3",0,2983529,"2.8 MB",1717900685,"8/06/24, 9:38:05 p. m.");</script>
 <script>addRow("saiko-bandidona.mp3","saiko-bandidona.mp3",0,2576437,"2.5 MB",1698534472,"28/10/23, 6:07:52 p. m.");</script>
 <script>addRow("saiko-bryant-myers-eskeleto.mp3","saiko-bryant-myers-eskeleto.mp3",0,4479823,"4.3 MB",1714267465,"27/04/24, 8:24:25 p. m.");</script>
 <script>addRow("saiko-dellafuente-luna.mp3","saiko-dellafuente-luna.mp3",0,3856228,"3.7 MB",1714185448,"26/04/24, 9:37:28 p. m.");</script>
@@ -1973,6 +2014,7 @@ var loadTimeData;class LoadTimeData{constructor(){this.data_=null}set data(value
 <script>addRow("sog-ryan-castro-la-garrafa.mp3","sog-ryan-castro-la-garrafa.mp3",0,1613041,"1.5 MB",1693722634,"3/09/23, 1:30:34 a. m.");</script>
 <script>addRow("soley-esteban-rojas-reboll-los-rogelios-malafama-dfzm-robin-todos-mienten.mp3","soley-esteban-rojas-reboll-los-rogelios-malafama-dfzm-robin-todos-mienten.mp3",0,6147202,"5.9 MB",1695865506,"27/09/23, 8:45:06 p. m.");</script>
 <script>addRow("soley-reboll333-3.33.mp3","soley-reboll333-3.33.mp3",0,3389786,"3.2 MB",1698974802,"2/11/23, 8:26:42 p. m.");</script>
+<script>addRow("soley-the-prodigiez-enemigo.mp3","soley-the-prodigiez-enemigo.mp3",0,2403402,"2.3 MB",1716761081,"26/05/24, 5:04:41 p. m.");</script>
 <script>addRow("soulchef-biggie-smalls-write-this-down.mp3","soulchef-biggie-smalls-write-this-down.mp3",0,2579781,"2.5 MB",1693722634,"3/09/23, 1:30:34 a. m.");</script>
 <script>addRow("spice-girls-wannabe.mp3","spice-girls-wannabe.mp3",0,2754488,"2.6 MB",1693722634,"3/09/23, 1:30:34 a. m.");</script>
 <script>addRow("spicyverse-deep-end.mp3","spicyverse-deep-end.mp3",0,2920835,"2.8 MB",1693722635,"3/09/23, 1:30:35 a. m.");</script>
@@ -2052,6 +2094,7 @@ var loadTimeData;class LoadTimeData{constructor(){this.data_=null}set data(value
 <script>addRow("the-weeknd-sacrifice.mp3","the-weeknd-sacrifice.mp3",0,4566948,"4.4 MB",1693722637,"3/09/23, 1:30:37 a. m.");</script>
 <script>addRow("the-weeknd-save-your-tears.mp3","the-weeknd-save-your-tears.mp3",0,3468362,"3.3 MB",1693722637,"3/09/23, 1:30:37 a. m.");</script>
 <script>addRow("the-weeknd-take-my-breath.mp3","the-weeknd-take-my-breath.mp3",0,3526876,"3.4 MB",1693722637,"3/09/23, 1:30:37 a. m.");</script>
+<script>addRow("third-party-believe.mp3","third-party-believe.mp3",0,3391875,"3.2 MB",1718157152,"11/06/24, 8:52:32 p. m.");</script>
 <script>addRow("tiago-pzk-&-feid-ft-duki-&-quevedo-tarde.mp3","tiago-pzk-&-feid-ft-duki-&-quevedo-tarde.mp3",0,3405668,"3.2 MB",1693722637,"3/09/23, 1:30:37 a. m.");</script>
 <script>addRow("tiago-pzk-bemaste.mp3","tiago-pzk-bemaste.mp3",0,2270491,"2.2 MB",1693722637,"3/09/23, 1:30:37 a. m.");</script>
 <script>addRow("tiago-pzk-bzrp-music-sessions-vol-48.mp3","tiago-pzk-bzrp-music-sessions-vol-48.mp3",0,2507056,"2.4 MB",1693722637,"3/09/23, 1:30:37 a. m.");</script>
@@ -2081,8 +2124,10 @@ var loadTimeData;class LoadTimeData{constructor(){this.data_=null}set data(value
 <script>addRow("tove-lo-habits-stay-high.mp3","tove-lo-habits-stay-high.mp3",0,3332525,"3.2 MB",1693722638,"3/09/23, 1:30:38 a. m.");</script>
 <script>addRow("travis-scott-bad-bunny-the-weeknd-k-pop.mp3","travis-scott-bad-bunny-the-weeknd-k-pop.mp3",0,2965139,"2.8 MB",1693722638,"3/09/23, 1:30:38 a. m.");</script>
 <script>addRow("trevor-daniel-falling.mp3","trevor-daniel-falling.mp3",0,2500368,"2.4 MB",1693722638,"3/09/23, 1:30:38 a. m.");</script>
+<script>addRow("trueno-cuando-el-bajo-suena.mp3","trueno-cuando-el-bajo-suena.mp3",0,2858977,"2.7 MB",1717376932,"2/06/24, 8:08:52 p. m.");</script>
 <script>addRow("trueno-dance-crip.mp3","trueno-dance-crip.mp3",0,2643310,"2.5 MB",1693722638,"3/09/23, 1:30:38 a. m.");</script>
 <script>addRow("trueno-j-balvin-un-paso.mp3","trueno-j-balvin-un-paso.mp3",0,3077570,"2.9 MB",1693722638,"3/09/23, 1:30:38 a. m.");</script>
+<script>addRow("trueno-rain-iii.mp3","trueno-rain-iii.mp3",0,2387101,"2.3 MB",1716760871,"26/05/24, 5:01:11 p. m.");</script>
 <script>addRow("trueno-tiago-pzk-hood-remix.mp3","trueno-tiago-pzk-hood-remix.mp3",0,2872770,"2.7 MB",1693722638,"3/09/23, 1:30:38 a. m.");</script>
 <script>addRow("trueno-tranky-funky.mp3","trueno-tranky-funky.mp3",0,2535059,"2.4 MB",1693722638,"3/09/23, 1:30:38 a. m.");</script>
 <script>addRow("twenty-one-pilots-next-semester.mp3","twenty-one-pilots-next-semester.mp3",0,3752156,"3.6 MB",1712449676,"6/04/24, 7:27:56 p. m.");</script>
