@@ -7,6 +7,7 @@ const canciones = ["",
 "3am-babi-tarde.mp3",
 "3am-beret-olvidala.mp3",
 "3am-khea-aqui-sigo-remix.mp3",
+"3am-la-noche.mp3",
 "6ix9ine-ft-lenier-bori.mp3",
 "6ix9ine-ft-yailin-la-mas-viral-pa-ti.mp3",
 "aaron-smith-dancin.mp3",
@@ -44,6 +45,7 @@ const canciones = ["",
 "alan-walker-faded.mp3",
 "alan-walker-ft-aura-and-tomine-harket-darkside.mp3",
 "alan-walker-ft-yuqi-of-(g)i-dle-jvke-fire.mp3",
+"alan-walker-ina-wroldsen-barcelona.mp3",
 "alan-walker-k391-emelie-hollow-lily.mp3",
 "alan-walker-k-391-tungevaag-mangoo-play.mp3",
 "alan-walker-putri-ariani-peder-elias-who-i-am.mp3",
@@ -295,6 +297,7 @@ const canciones = ["",
 "benson-boone-in-the-stars.mp3",
 "benson-boone-slow-it-down.mp3",
 "beret-beso-robado.mp3",
+"beret-cupido.mp3",
 "beret-el-dia-menos-pensado.mp3",
 "beret-lo-siento.mp3",
 "beret-melendi-desde-cero.mp3",
@@ -400,6 +403,7 @@ const canciones = ["",
 "boywithuke-toxic.mp3",
 "boywithuke-trauma.mp3",
 "boywithuke-understand.mp3",
+"boza-elena-rose-orion.mp3",
 "braaten-&-aili-without-you.mp3",
 "breakbot-ft-irfane-baby-im-yours.mp3",
 "briella-coquette.mp3",
@@ -429,6 +433,7 @@ const canciones = ["",
 "bulin-47-x-myke-towers-la-tranza.mp3",
 "burak-yeter-ft-danelle-sandoval-tuesday.mp3",
 "burna-boy-ft-dave-cheat-on-me.mp3",
+"caleb-calloway-yandel-ryan-castro-guayeteo.mp3",
 "cali-y-el-dandee-amor.mp3",
 "cali-y-el-dandee-beret-primera-carta.mp3",
 "cali-y-el-dandee-como-ayer.mp3",
@@ -781,6 +786,7 @@ const canciones = ["",
 "eminem-houdini.mp3",
 "enrique-iglesias-ft-descemer-bueno-gente-de-zona-bailando.mp3",
 "enrique-iglesias-maria-becerra-asi-es-la-vida.mp3",
+"enrique-iglesias-yotuel-yng-lvcas-fria-remix.mp3",
 "era-ameno.mp3",
 "eslabon-armado-ft-dannylux-jugaste-y-sufri.mp3",
 "eslabon-armado-peso-pluma-ella-baila-sola.mp3",
@@ -933,6 +939,7 @@ const canciones = ["",
 "izaak-anuel-aa-xqcp.mp3",
 "izaak-jhayco-anuel-aa-bby-boo-remix.mp3",
 "izaak-luar-la-l-omar-courtz-bonnie-&-clyde-remix.mp3",
+"j-abdiel-anuel-aa-blessd-ft-izaak-&-pirlo-wya-remix-black-and-yellow.mp3",
 "j-abdiel-de-la-rose-yan-block-jay-wheeler-izaak-wya-remix-red.mp3",
 "j-abdiel-izaak-hades-66-corina-smith-miky-woodz-wya-remix-blue.mp3",
 "jack-harlow-first-class.mp3",
@@ -1051,6 +1058,7 @@ const canciones = ["",
 "kany-garcia-confieso.mp3",
 "kany-garcia-garcia.mp3",
 "kany-garcia-young-miko-en-esta-boca.mp3",
+"kapo-ohnana.mp3",
 "karbeats-mora-jhayco-ft-yan-block-omar-courtz-donde-crj-remix.mp3",
 "karly-b-besos-con-veneno.mp3",
 "karly-b-buenota.mp3",
@@ -1075,6 +1083,7 @@ const canciones = ["",
 "karol-g-romeo-santos-x-si-volvemos.mp3",
 "karol-g-sejodioto.mp3",
 "karol-g-shakira-tqg.mp3",
+"karol-g-si-antes-te-hubiera-conocido.mp3",
 "karol-g-tiesto-contigo.mp3",
 "karol-g-tus-gafitas.mp3",
 "karol-g-young-miko-dispo.mp3",
@@ -1099,6 +1108,7 @@ const canciones = ["",
 "kevin-roldan-bryant-myers-ufff.mp3",
 "kevin-roldan-otra-vez.mp3",
 "kevin-roldan-urus.mp3",
+"key-key-ft-ozuna-tengo-un-plan-remix.mp3",
 "khea-emilia-tu-y-yo.mp3",
 "khea-ft-bad-bunny-duki-cazzu-loca-remix.mp3",
 "khea-julia-michaels-becky-g-ft-di-genius-only-one.mp3",
@@ -1108,6 +1118,7 @@ const canciones = ["",
 "kiss-i-was-made-for-lovin-you.mp3",
 "kris-r-rosas-&-peluches.mp3",
 "kris-r-x-kevin-roldan-me-enamore-de-una-puta.mp3",
+"kris-r-x-madrid.mp3",
 "kygo-ava-max-whatever.mp3",
 "kygo-ft-conrad-sewell-firestone.mp3",
 "kygo-ft-justin-jesso-stargazing.mp3",
@@ -1197,6 +1208,7 @@ const canciones = ["",
 "maluma-carin-leon-segun-quien.mp3",
 "maluma-chencho-corleone-nos-comemos-vivos.mp3",
 "maluma-coco-loco.mp3",
+"maluma-contrato.mp3",
 "maluma-cositas-de-la-usa.mp3",
 "maluma-darell-trap2016.mp3",
 "maluma-don-omar-ojitos-chiquiticos.mp3",
@@ -1415,6 +1427,7 @@ const canciones = ["",
 "nicky-jam-voy-a-beber.mp3",
 "nicky-jam-x-beele-calor.mp3",
 "nicky-jam-x-feid-69.mp3",
+"nicky-jam-x-ryan-castro-chicokis.mp3",
 "nicky-jam-x-the-chainsmokers-x-maluma-celular.mp3",
 "nicky-jam-x-trueno-cangrinaje.mp3",
 "nicky-romero-marf-ft-wulf-okay.mp3",
@@ -1487,6 +1500,7 @@ const canciones = ["",
 "paty-cantu-dicen-por-ahi.mp3",
 "paty-cantu-la-otra.mp3",
 "paula-koops-b.o.b.o.mp3",
+"paula-koops-ruslana-me-he-colgado-de-mi-ex.mp3",
 "paulo-londra-bzrp-music-sessions-vol-23.mp3",
 "paulo-londra-chance.mp3",
 "paulo-londra-chango.mp3",
@@ -1499,6 +1513,7 @@ const canciones = ["",
 "paulo-londra-luces.mp3",
 "paulo-londra-nublado.mp3",
 "paulo-londra-ojala.mp3",
+"paulo-londra-paracaidas.mp3",
 "paulo-londra-plan-a.mp3",
 "paulo-londra-por-deporte.mp3",
 "paulo-londra-posdata.mp3",
@@ -1565,6 +1580,7 @@ const canciones = ["",
 "post-malone-the-weeknd-one-right-now.mp3",
 "pressure9x19-anuel-aa-yovng-chimi-hades66-cdobleta-luar-la-l-vvs-switch-remix.mp3",
 "prince-royce-nicky-jam-jay-wheeler-si-te-preguntan.mp3",
+"producto-sin-corte-x-anuel-aa-hasta-la-muerte.mp3",
 "psy-ft-hyuna-gangnam-style.mp3",
 "public-make-you-mine.mp3",
 "purple-disco-machine-&-sophie-and-the-giants-in-the-dark.mp3",
@@ -1675,6 +1691,7 @@ const canciones = ["",
 "ryan-castro-sog-el-pan-de-estefania.mp3",
 "ryan-castro-sog-nea.mp3",
 "ryan-castro-wasa-wasa.mp3",
+"sabrina-carpenter-espresso.mp3",
 "sabrina-carpenter-feather.mp3",
 "sabrina-carpenter-please-please-please.mp3",
 "saiko-bandidona.mp3",
@@ -1876,10 +1893,12 @@ const canciones = ["",
 "trueno-dance-crip.mp3",
 "trueno-j-balvin-un-paso.mp3",
 "trueno-rain-iii.mp3",
+"trueno-real-gangsta-love.mp3",
 "trueno-tiago-pzk-hood-remix.mp3",
 "trueno-tranky-funky.mp3",
 "twenty-one-pilots-next-semester.mp3",
 "twenty-one-pilots-overcompensate.mp3",
+"twenty-one-pilots-paladin-strait.mp3",
 "twenty-one-pilots-ride.mp3",
 "twenty-one-pilots-saturday.mp3",
 "twenty-one-pilots-shy-away.mp3",
@@ -1914,6 +1933,7 @@ const canciones = ["",
 "wisin-camilo-los-legendarios-buenos-dias.mp3",
 "wisin-chencho-corleone-loco-x-perrearte.mp3",
 "wisin-cosculluela-desnuda.mp3",
+"wisin-de-la-ghetto-a-distancia.mp3",
 "wisin-don-omar-jowell-&-randy-puro-guayeteo.mp3",
 "wisin-jhay-cortez-anuel-aa-ft-myke-towers-los-legendarios-fiel-remix.mp3",
 "wisin-jhay-cortez-los-legendarios-fiel.mp3",
@@ -2125,28 +2145,45 @@ function removeActive(){
 function reproduccionActual(texto){
 	document.getElementById('currentPlay').innerText=texto
 }
-//Funcion para cargar las canciones en el reproductor
-function loadMusic(ruta){
-	var source = document.getElementById('source')
-	var folder1 ="https://ferruea.github.io/music1/";//Carpeta donde tenemos almancenada la musica
-	var folder2 ="https://ferruea.github.io/music2/";//Carpeta donde tenemos almancenada la musica
-	//Verificar si el archivo existe en la variable folder1
-	var xhr = new XMLHttpRequest()
-	xhr.open('HEAD', folder1 + ruta, false)
-	xhr.send();
-	if (xhr.status === 200) {
-		//Si el archivo existe en folder1
-		source.src = folder1 + ruta;
-	} else {
-		//Si no se encuentra el archivo, cambiar la variable en folder2
-		source.src = folder2 + ruta;
-	}
-	var index= indiceActual[0]= canciones.indexOf(ruta)
-	removeActive()
-	var item=document.getElementById(index)
-	item.classList.add("active");
-	reproduccionActual("Reproduciendo:\n"+ ruta)
-	player.load()
+// Función para cargar las canciones en el reproductor
+function loadMusic(ruta) {
+	var source = document.getElementById('source');
+    var folder1 = "https://ferruea.github.io/music1/"; // Carpeta donde tenemos almacenada la música music1
+    var folder2 = "https://ferruea.github.io/music2/"; // Carpeta donde tenemos almacenada la música music2
+    var folder3 = "https://ferruea.github.io/music3/"; // Carpeta donde tenemos almacenada la música music3
+    // Verificar si el archivo existe en folder1
+    var xhr = new XMLHttpRequest();
+    xhr.open('HEAD', folder1 + ruta, false);
+    xhr.send();
+    if (xhr.status === 200) {
+        // Si el archivo existe en folder1
+        source.src = folder1 + ruta;
+    } else {
+        // Si no se encuentra el archivo en folder1, verificar en folder2
+        xhr.open('HEAD', folder2 + ruta, false);
+        xhr.send();
+        if (xhr.status === 200) {
+            // Si el archivo existe en folder2
+            source.src = folder2 + ruta;
+        } else {
+            // Si no se encuentra en folder2, verificar en folder3
+            xhr.open('HEAD', folder3 + ruta, false);
+            xhr.send();
+            if (xhr.status === 200) {
+                // Si el archivo existe en folder3
+                source.src = folder3 + ruta;
+            } else {
+                console.error("El archivo no existe en ninguna de las rutas especificadas.");
+                return;
+            }
+        }
+    }
+    var index = indiceActual[0] = canciones.indexOf(ruta);
+    removeActive();
+    var item = document.getElementById(index);
+    item.classList.add("active");
+    reproduccionActual("Reproduciendo:\n" + ruta);
+    player.load();
 }
 //Funcion para pausar o darle play 
 function togglePlay() {

@@ -38,7 +38,7 @@ listadoMusica.onclick = (e) =>{
 	const itemClick = e.target
 	removeActive()
 	itemClick.classList.add("active");
-	reproduccionActual("Reproduciendo: "+ itemClick.innerText)
+	reproduccionActual("Reproduciendo:\n"+ itemClick.innerText)
 	loadMusic(itemClick.innerText)
 	player.play()
 	indiceActual[0]= e.target.id
@@ -128,8 +128,19 @@ function reproduccionActual(texto){
 //Funcion para cargar las canciones en el reproductor
 function loadMusic(ruta){
 	var source = document.getElementById('source')
-	var folder ="https://ferruea.tech/music/";//Carpeta donde tenemos almancenada la musica
-	source.src= folder+"/"+ruta
+	var folder1 ="https://ferruea.github.io/music1/";//Carpeta donde tenemos almancenada la musica
+	var folder2 ="https://ferruea.github.io/music2/";//Carpeta donde tenemos almancenada la musica
+	//Verificar si el archivo existe en la variable folder1
+	var xhr = new XMLHttpRequest()
+	xhr.open('HEAD', folder1 + ruta, false)
+	xhr.send();
+	if (xhr.status === 200) {
+		//Si el archivo existe en folder1
+		source.src = folder1 + ruta;
+	} else {
+		//Si no se encuentra el archivo, cambiar la variable en folder2
+		source.src = folder2 + ruta;
+	}
 	var index= indiceActual[0]= canciones.indexOf(ruta)
 	removeActive()
 	var item=document.getElementById(index)
