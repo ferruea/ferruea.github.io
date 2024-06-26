@@ -4,10 +4,7 @@ body {
   margin: 0px;
   font-family: 'Roboto';
   width: 100%;
-  height: 100vh;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
+  height: 100%;
   background-color: #000033;
 }
 
@@ -24,7 +21,7 @@ body {
   height: 583px;
   position: relative;
   border-radius: 40px;
-  margin: 15px auto 20px auto;
+  margin: 20px auto 20px auto;
   border-width: 1px;
   border-style: solid;
   border-color: #660099;
@@ -170,15 +167,15 @@ input::placeholder {
 .music {
   position: fixed;
   z-index: 1;
-  bottom: 25px;
-  left: 25px;
+  bottom: 20px;
+  left: 20px;
 }
 
 .boton {
   position: fixed;
   z-index: 1;
-  bottom: 25px;
-  right: 25px;
+  bottom: 20px;
+  right: 20px;
   padding: 0;
   border: none;
   background: none;
