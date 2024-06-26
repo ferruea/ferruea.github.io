@@ -36,41 +36,38 @@ function addRow(name, url, isdir,
   }
   link.innerText = name;
   
-  // Verificar existencia del archivo en music1
-  fetch("https://ferruea.github.io/music1/" + url, {
-    method: "HEAD"
-  })
-  .then(function(response) {
-    if (response.ok) {
-      link.href = "https://ferruea.github.io/music1/" + url;
-    } else {
-      // Si no existe en music1, verificar en music2
-      return fetch("https://ferruea.github.io/music2/" + url, {
-        method: "HEAD"
-      });
-    }
-  })
-  .then(function(response) {
-    if (response.ok) {
-      link.href = "https://ferruea.github.io/music2/" + url;
-    } else {
-      // Si no existe en music2, verificar en music3
-      return fetch("https://ferruea.github.io/music3/" + url, {
-        method: "HEAD"
-      });
-    }
-  })
-  .then(function(response) {
-    if (response.ok) {
-      link.href = "https://ferruea.github.io/music3/" + url;
-    } else {
+  // Definir las rutas de música en orden de prioridad
+  var musicPaths = [
+    "https://ferruea.github.io/music1/",
+    "https://ferruea.github.io/music2/",
+    "https://ferruea.github.io/music3/"
+  ];
+
+  // Función para intentar cargar el archivo desde una lista de rutas
+  function tryLoadMusic(paths, index) {
+    if (index >= paths.length) {
       console.error("El archivo no existe en ninguna de las rutas especificadas.");
       throw new Error("Archivo no encontrado en ninguna ruta");
     }
-  })
-  .catch(function(error) {
-      console.error("Error:", error);
-    });
+
+    var currentPath = paths[index] + url;
+
+    fetch(currentPath, { method: "HEAD" })
+      .then(function(response) {
+        if (response.ok) {
+          link.href = currentPath;
+        } else {
+          // Intentar con la siguiente ruta
+          tryLoadMusic(paths, index + 1);
+        }
+      })
+      .catch(function(error) {
+        console.error("Error:", error);
+      });
+  }
+
+  // Iniciar la carga del archivo desde las rutas definidas
+  tryLoadMusic(musicPaths, 0);
 
   file_cell.dataset.value = name;
   file_cell.appendChild(link);
