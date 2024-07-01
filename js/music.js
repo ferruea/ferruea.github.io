@@ -2068,7 +2068,7 @@ listadoMusica.onclick = (e) =>{
 	const itemClick = e.target
 	removeActive()
 	itemClick.classList.add("active");
-	reproduccionActual("Reproduciendo:\n"+ itemClick.innerText)
+	reproduccionActual(itemClick.innerText)
 	loadMusic(itemClick.innerText)
 	player.play()
 	indiceActual[0]= e.target.id
@@ -2120,7 +2120,7 @@ function nextMusic(){
 	loadMusic(canciones[siguiente]);
 	player.play()
 	indiceActual[0]= siguiente
-	reproduccionActual("Reproduciendo:\n"+ canciones[siguiente])
+	reproduccionActual(canciones[siguiente])
 	classIconPlay()
 	toggleIcon()
 }
@@ -2139,7 +2139,7 @@ function prevMusic(){
 	loadMusic(canciones[anterior]);
 	player.play()
 	indiceActual[0]= anterior
-	reproduccionActual("Reproduciendo:\n"+ canciones[anterior])
+	reproduccionActual(canciones[anterior])
 	classIconPlay()
 	toggleIcon()
 }
@@ -2192,7 +2192,7 @@ function loadMusic(ruta) {
     removeActive();
     var item = document.getElementById(index);
     item.classList.add("active");
-    reproduccionActual("Reproduciendo:\n" + ruta);
+    reproduccionActual(ruta);
     player.load();
 }
 //Funcion para pausar o darle play 
