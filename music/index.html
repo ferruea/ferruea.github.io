@@ -258,6 +258,51 @@ window.addEventListener('DOMContentLoaded', onLoad);
 
 <body>
 
+<style>
+  /* Define la variable CSS para el color de fondo de la tabla */
+  :root {
+    --tabla-color-fondo: #ffffff; /* Color de fondo de la tabla en modo claro */
+    --tabla-color-fondo-oscuro: #121212; /* Color de fondo de la tabla en modo oscuro */
+  }
+
+  /* Estilo para el encabezado de la tabla */
+  #nameColumnHeader,
+  #sizeColumnHeader,
+  #dateColumnHeader {
+    position: sticky;
+    top: 0;
+    background-color: var(--tabla-color-fondo); /* Usa la variable para el color de fondo */
+    z-index: 1; /* Asegura que esté sobre el contenido al hacer scroll */
+  }
+
+  /* Media query para el modo oscuro */
+  @media (prefers-color-scheme: dark) {
+    #nameColumnHeader,
+    #sizeColumnHeader,
+    #dateColumnHeader {
+      background-color: var(--tabla-color-fondo-oscuro); /* Usa el color de fondo oscuro */
+    }
+  }
+</style>
+
+<script>
+    window.addEventListener('scroll', function() {
+      var headers = document.querySelectorAll('#nameColumnHeader, #sizeColumnHeader, #dateColumnHeader');
+      var scrollY = window.scrollY || window.pageYOffset;
+
+      // Aplica padding-top de 10px cuando se ha desplazado la página
+      if (scrollY > 0) {
+        headers.forEach(function(header) {
+          header.style.paddingTop = '10px';
+        });
+      } else {
+        headers.forEach(function(header) {
+          header.style.paddingTop = '0';
+        });
+      }
+    });
+  </script>
+
 <h1 id="header">Índice de LOCATION</h1>
 
 <div id="parentDirLinkBox" style="display:none">
@@ -269,18 +314,20 @@ window.addEventListener('DOMContentLoaded', onLoad);
 <table>
   <thead>
     <tr class="header" id="theader">
-      <th id="nameColumnHeader" tabindex=0 role="button">Nombre</th>
+      <th id="nameColumnHeader" tabindex=0 role="button">Nombre
+      <hr></th>
       <th id="sizeColumnHeader" class="detailsColumn" tabindex=0 role="button">
         Tamaño
-      </th>
+      <hr></th>
       <th id="dateColumnHeader" class="detailsColumn" tabindex=0 role="button">
         Fecha de modificación
-      </th>
+      <hr></th>
     </tr>
   </thead>
   <tbody id="tbody">
   </tbody>
 </table>
+<hr size="1px">
 
 </body>
 
