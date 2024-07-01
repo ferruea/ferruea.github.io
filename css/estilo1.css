@@ -1,0 +1,182 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto);
+
+body {
+  margin: 0px;
+  font-family: 'Roboto';
+  width: 100%;
+  height: 100%;
+  background-color: #000033;
+}
+
+.particles {
+  position: fixed;
+  top: 0px;
+  width: 100%;
+  height: 100%;
+}
+
+.phone {
+  text-align: center;
+  width: 381px;
+  height: 583px;
+  position: relative;
+  border-radius: 40px;
+  margin: 20px auto 20px auto;
+  border-width: 1px;
+  border-style: solid;
+  border-color: #660099;
+  opacity: 0.9;
+  overflow: hidden;
+}
+
+.phone::before {
+  content: '';
+  width: 200%;
+  height: 200%;
+  position: absolute;
+  background: conic-gradient(
+        #fd004c,
+        #fe9000,
+        #fff020,
+        #3edf4b,
+        #3363ff,
+        #b102b7,
+        #fd004c
+    );
+  left: -50%;
+  top: -50%;
+  animation: spin 1.5s infinite linear;
+}
+
+@keyframes spin{
+  100%{
+    transform: rotate(-360deg);
+  }
+}
+
+.phone2 {
+  text-align: center;
+  width: 375px;
+  height: 577px;
+  background-color: #000000;
+  position: relative;
+  border-radius: 40px;
+  margin: 3px 3px 3px 3px;
+  opacity: 0.9;
+}
+
+.phone2::after {
+  content: '';
+  width: 135px;
+  height: 6px;
+  background-color: #ffffff;
+  border-radius: 3px;
+  display: block;
+  position: absolute;
+  bottom: 9px;
+  left: 50%;
+  margin-left: -67.5px;
+}
+
+#controls {
+  padding: 10px;
+}
+
+.timer {
+  width: 30%;
+  position: relative;
+  top: 10px;
+  left: 10px;
+  text-align: left;
+  float: left;
+  color: #ffffff;
+}
+
+.volumen {
+  width: 70%;
+  position: relative;
+  top: 10px;
+  right: 10px;
+  text-align: right;
+  float: left;
+  color: #000000;
+  margin-bottom: 20px;
+}
+
+li {
+  padding: 5px;
+}
+
+li:hover, svg:hover {
+  cursor: pointer;
+  color: #cc0099;
+}
+
+li.active {
+  color: #0066cc;
+}
+
+svg {
+  color: #0066cc;
+  margin: 0px 0px 2px 0px;
+}
+
+#currentPlay {
+  color: #ffffff;
+}
+
+progress {
+  width: 80%;
+  margin: 5px 0px 5px 0px;
+}
+
+h3 {
+  color: #e84393;
+  margin: 0px 0px 5px 0px;
+}
+
+#playList {
+  overflow: auto;
+  height: 280px;
+  background: white;
+  text-align: left;
+  color: #cc0099;
+  margin: 5px 10px 0px 10px;
+  padding: 0px 5px 0px 5px;
+  border-radius: 0px 0px 20px 20px;
+}
+
+a {
+  color: #8f95a4;
+}
+
+input::placeholder {
+  color: #0066cc;
+  font-style: italic;
+  text-align: center;
+  background: white;
+}
+
+.footer {
+  position: relative;
+  text-align: center;
+  width: 100%;
+  bottom: 10px;
+}
+
+.music {
+  position: fixed;
+  z-index: 1;
+  bottom: 20px;
+  left: 20px;
+}
+
+.boton {
+  position: fixed;
+  z-index: 1;
+  bottom: 20px;
+  right: 20px;
+  padding: 0;
+  border: none;
+  background: none;
+}
