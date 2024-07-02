@@ -262,17 +262,18 @@ window.addEventListener('DOMContentLoaded', onLoad);
 <style>
   /* Define la variable CSS para el color de fondo de la tabla */
   :root {
-    --tabla-color-fondo: #ffffff; /* Color de fondo de la tabla en modo claro */
+    --tabla-color-fondo-claro: #ffffff; /* Color de fondo de la tabla en modo claro */
     --tabla-color-fondo-oscuro: #121212; /* Color de fondo de la tabla en modo oscuro */
+    --tabla-color-fondo-celular: #000000; /* Color de fondo de la tabla en modo celular */
   }
 
-  /* Estilo para el encabezado de la tabla */
+  /* Media query para el modo claro */
   #nameColumnHeader,
   #sizeColumnHeader,
   #dateColumnHeader {
     position: sticky;
     top: 0;
-    background-color: var(--tabla-color-fondo); /* Usa la variable para el color de fondo */
+    background-color: var(--tabla-color-fondo-claro); /* Usa el color de fondo claro */
     z-index: 1; /* Asegura que esté sobre el contenido al hacer scroll */
   }
 
@@ -282,6 +283,15 @@ window.addEventListener('DOMContentLoaded', onLoad);
     #sizeColumnHeader,
     #dateColumnHeader {
       background-color: var(--tabla-color-fondo-oscuro); /* Usa el color de fondo oscuro */
+    }
+  }
+
+  /* Media query para dispositivos móviles */
+  @media screen and (max-width: 800px) {
+    #nameColumnHeader,
+    #sizeColumnHeader,
+    #dateColumnHeader {
+      background-color: var(--tabla-color-fondo-celular); /* Usa el color de fondo para celular */
     }
   }
 </style>
