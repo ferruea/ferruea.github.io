@@ -170,17 +170,17 @@ input::placeholder {
 .music {
   position: fixed;
   z-index: 1;
-  bottom: 25px;
-  left: 25px;
+  bottom: 30px;
+  left: 30px;
   font-weight: bold;
 }
 
 .boton {
   position: fixed;
   z-index: 1;
-  bottom: 25px;
-  right: 25px;
-  padding: 0;
+  bottom: 30px;
+  right: 30px;
+  padding: 1;
   border: none;
   background: none;
 }
