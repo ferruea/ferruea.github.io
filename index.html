@@ -27,9 +27,9 @@
                 <div class="timer" id="timer">&nbsp;</div>
                 
                 <div class="volumen">
-                    <i class="fas fa-volume-down"></i>
+                    <i class="fas fa-volume-down" onclick="ajustarVolumen(-0.05)"></i>
                     <input type="range" name="volumen" id="volumen" min="0" max="1" step="0.01" value="0.75">
-                    <i class="fas fa-volume-up"></i>
+                    <i class="fas fa-volume-up" onclick="ajustarVolumen(0.05)"></i>
                 </div>
 
                 <i class="fas fa-backward fa-5x" onclick="prevMusic();"></i>

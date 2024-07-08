@@ -2107,6 +2107,18 @@ volumen.oninput= (e) =>{
 	const vol = e.target.value
 	player.volume =vol
 }
+// Función para ajustar el volumen al tocar los iconos de volumen
+function ajustarVolumen(delta) {
+	let nuevoVolumen = parseFloat(volumen.value) + delta;
+	// Asegurarse de que el volumen esté dentro del rango (0 a 1)
+	if (nuevoVolumen < 0) {
+		nuevoVolumen = 0
+	} else if (nuevoVolumen > 1) {
+		nuevoVolumen = 1
+	}
+	volumen.value = nuevoVolumen
+	player.volume = nuevoVolumen
+}
 //Funcion para actualizar la barra de progreso del reprodutor
 const updateProgress = () =>{
 	if (player.currentTime >0){
