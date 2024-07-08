@@ -262,19 +262,19 @@ window.addEventListener('DOMContentLoaded', onLoad);
 <style>
   /* Define la variable CSS para el color de fondo de la tabla */
   :root {
-    --tabla-color-fondo-claro: #ffffff; /* Color de fondo de la tabla en modo claro */
-    --tabla-color-fondo-oscuro: #121212; /* Color de fondo de la tabla en modo oscuro */
-    --tabla-color-fondo-celular: #000000; /* Color de fondo de la tabla en modo celular */
+    --tabla-color-fondo-claro: #ffffff; /* Color de fondo en modo claro */
+    --tabla-color-fondo-oscuro: #121212; /* Color de fondo en modo oscuro */
+    --tabla-color-fondo-celular-claro: #ffffff; /* Color de fondo en modo celular claro */
+    --tabla-color-fondo-celular-oscuro: #000000; /* Color de fondo en modo celular oscuro */
   }
 
   /* Media query para el modo claro */
-  #nameColumnHeader,
-  #sizeColumnHeader,
-  #dateColumnHeader {
-    position: sticky;
-    top: 0;
-    background-color: var(--tabla-color-fondo-claro); /* Usa el color de fondo claro */
-    z-index: 1; /* Asegura que esté sobre el contenido al hacer scroll */
+  @media (prefers-color-scheme: light) {
+    #nameColumnHeader,
+    #sizeColumnHeader,
+    #dateColumnHeader {
+      background-color: var(--tabla-color-fondo-claro);
+    }
   }
 
   /* Media query para el modo oscuro */
@@ -282,16 +282,26 @@ window.addEventListener('DOMContentLoaded', onLoad);
     #nameColumnHeader,
     #sizeColumnHeader,
     #dateColumnHeader {
-      background-color: var(--tabla-color-fondo-oscuro); /* Usa el color de fondo oscuro */
+      background-color: var(--tabla-color-fondo-oscuro);
     }
   }
 
   /* Media query para dispositivos móviles */
   @media screen and (max-width: 1000px) {
+    /* Cambia el color de fondo para celular según el esquema de color del dispositivo */
     #nameColumnHeader,
     #sizeColumnHeader,
     #dateColumnHeader {
-      background-color: var(--tabla-color-fondo-celular); /* Usa el color de fondo para celular */
+      background-color: var(--tabla-color-fondo-celular-claro); /* Por defecto para modo celular claro */
+    }
+
+    /* Si el dispositivo está en modo oscuro, usa el color oscuro para celular */
+    @media (prefers-color-scheme: dark) {
+      #nameColumnHeader,
+      #sizeColumnHeader,
+      #dateColumnHeader {
+        background-color: var(--tabla-color-fondo-celular-oscuro);
+      }
     }
   }
 </style>
