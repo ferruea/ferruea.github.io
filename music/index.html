@@ -267,6 +267,14 @@ window.addEventListener('DOMContentLoaded', onLoad);
     --tabla-color-fondo-celular-claro: #ffffff; /* Color de fondo en modo celular claro */
     --tabla-color-fondo-celular-oscuro: #000000; /* Color de fondo en modo celular oscuro */
   }
+   /* Estilo para el encabezado de la tabla fija */
+  #nameColumnHeader,
+  #sizeColumnHeader,
+  #dateColumnHeader {
+    position: sticky;
+    top: 0;
+    z-index: 1; /* Asegura que esté sobre el contenido al hacer scroll */
+  }
 
   /* Media query para el modo claro */
   @media (prefers-color-scheme: light) {
