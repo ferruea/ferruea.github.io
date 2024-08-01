@@ -1,14 +1,21 @@
 @import url(https://fonts.googleapis.com/css?family=Roboto);
 
-body {
+html, body {
   margin: 0px;
-  font-family: 'Roboto';
+  padding: 0px;
+  height: 100%;
   width: 100%;
-  height: 100vh;
+  font-family: 'Roboto';
+  background-color: #000033;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+body {
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  background-color: #000033;
+  align-items: center;
 }
 
 .particles {
@@ -183,4 +190,20 @@ input::placeholder {
   padding: 1;
   border: none;
   background: none;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+th, td {
+    border: none;
+    padding: 0;
+}
+.col1, .col3 {
+  width: 15%;
+}
+.col2 {
+  border: 0px;
+  width: 70%;
 }

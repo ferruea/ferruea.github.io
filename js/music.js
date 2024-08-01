@@ -2160,6 +2160,8 @@ function ajustarVolumen(delta) {
 	player.volume = nuevoVolumen
 }
 //Funcion para actualizar la barra de progreso del reprodutor
+let isRepeating = false;
+// Variables globales para controlar el estado
 const updateProgress = () =>{
 	if (player.currentTime >0){
 		const barra = document.getElementById('progress')
@@ -2173,10 +2175,24 @@ const updateProgress = () =>{
 		duracion= actual +' / '+ dura
 		document.getElementById('timer').innerText=duracion 
 	}
-	if (player.ended){
-		nextMusic();//Reproducir la siguiente pista
-	} 
+	if (player.ended) {
+        if (isRepeating) {
+            player.currentTime = 0;
+            player.play();
+        } else {
+            nextMusic(); // Reproducir la siguiente pista
+        }
+    }
 }
+// Funcion para cambiar el icono de repetir off/on
+const toggleRepeat = () => {
+    isRepeating = !isRepeating;
+    var element = document.getElementById("iconRepeat");
+   element.classList.toggle("fa-repeat-off");
+   element.classList.toggle("fa-repeat-on");
+};
+// Asegúrate de actualizar el progreso del reproductor periódicamente
+setInterval(updateProgress, 1000);
 //Funcion para reproducir la proxima cancion
 function nextMusic(){  
 	const source = document.getElementById('source');

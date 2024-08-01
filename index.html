@@ -41,9 +41,18 @@
                 <br><span id="currentPlay"></span><br>
                 <progress id="progress" value="0" max="100"></progress>
 
-                <h3>Mi música</h3>
-
-                <input id="searchTerm" type="text" onkeyup="doSearch(); replaceName(this)" placeholder="Buscar música">
+                <table><thead>
+                    <tr>
+                        <th class="col1"></th>
+                        <th class="col2">
+                            <h3>Mi música</h3>
+                            <input id="searchTerm" type="text" onkeyup="doSearch(); replaceName(this)" placeholder="Buscar música">
+                        </th>
+                        <th class="col3">
+                            <i class="far fa-repeat-off fa-2x" onclick="toggleRepeat();" id="iconRepeat"></i>
+                        </th>
+                    </tr>
+                </thead></table>
 
                 <div id="playList"></div>
             </div>
