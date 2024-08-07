@@ -164,7 +164,9 @@ a {
 
 input::placeholder {
   color: #0066cc;
+  font-family: 'Roboto';
   font-style: italic;
+  font-size: 14px;
   text-align: center;
   background: white;
 }
