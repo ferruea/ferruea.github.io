@@ -1,6 +1,6 @@
 // Función para ajustar el zoom
 function adjustZoom() {
-  if (window.innerWidth > 1) {
+  if (window.innerWidth > 1000) {
     document.body.style.zoom = '90%';
   } else {
     document.body.style.zoom = '100%'; // Opcional: restablece el zoom si es menor de 1000px
