@@ -36,8 +36,13 @@ body {
   border-width: 1px;
   border-style: solid;
   border-color: #660099;
-  opacity: 0.9;
   overflow: hidden;
+  opacity: 0.1;
+  transition: opacity 1s ease-in-out;
+}
+
+.phone.loaded {
+  opacity: 0.9;
 }
 
 .phone::before {
@@ -210,4 +215,15 @@ th, td {
 .col2 {
   border: 0px;
   width: 70%;
+}
+@media (min-width: 1000px) {
+  body {
+    zoom: 90%;
+  }
+  #progress {
+    zoom: 111.1%;
+    width: 80%;
+    height: 14px;
+    margin: 4.5px 0px 5.2px 0px;
+  }
 }
