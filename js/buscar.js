@@ -66,8 +66,3 @@ function replaceName(e) {
     }
   });
 }
-
-// Añade la clase 'loaded' al elemento con la clase 'phone' cuando la página ha terminado de cargar
-window.addEventListener('load', () => {
-  document.querySelector('.phone').classList.add('loaded');
-});

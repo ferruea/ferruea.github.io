@@ -37,11 +37,6 @@ body {
   border-style: solid;
   border-color: #660099;
   overflow: hidden;
-  opacity: 0.1;
-  transition: opacity 1s ease-in-out;
-}
-
-.phone.loaded {
   opacity: 0.9;
 }
 
