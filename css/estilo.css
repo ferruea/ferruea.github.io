@@ -212,14 +212,3 @@ th, td {
   border: 0px;
   width: 70%;
 }
-@media (min-width: 1000px) {
-  body {
-    zoom: 90%;
-  }
-  #progress {
-    zoom: 111.1%;
-    width: 80%;
-    height: 14px;
-    margin: 4.5px 0px 5.2px 0px;
-  }
-}
