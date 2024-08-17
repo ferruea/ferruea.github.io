@@ -21,6 +21,8 @@ body {
 
 .particles {
   position: fixed;
+  top: 0px;
+  left: 0px;
   width: 100%;
   height: 100%;
 }
@@ -209,4 +211,15 @@ th, td {
 .col2 {
   border: 0px;
   width: 70%;
+}
+@media (min-width: 1000px) {
+  body {
+    zoom: 90%;
+  }
+  #progress {
+    zoom: 111.1%;
+    width: 80%;
+    height: 14px;
+    margin: 4.5px 0px 5.2px 0px;
+  }
 }
