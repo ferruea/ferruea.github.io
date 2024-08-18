@@ -1,11 +1,14 @@
-window.onload = function() {
-  fetch('contenido.html')
-  .then(response => response.text())
-  .then(data => {
-    document.getElementById('particles-js').innerHTML = data;
-  })
-  .catch(error => console.error('Error:', error));
-};
+document.addEventListener('DOMContentLoaded', function() {
+  var xhr = new XMLHttpRequest();
+  xhr.open('GET', 'index.html', true);
+  xhr.onload = function() {
+    if (xhr.status === 200) {
+      document.getElementById('particles-js').innerHTML = xhr.responseText;
+    }
+  };
+  xhr.send();
+});
+
 /* -----------------------------------------------
 /* Author : Vincent Garreau  - vincentgarreau.com
 /* MIT license: http://opensource.org/licenses/MIT
