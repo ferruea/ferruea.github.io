@@ -1,6 +1,6 @@
 document.addEventListener('DOMContentLoaded', function() {
   var xhr = new XMLHttpRequest();
-  xhr.open('GET', 'particles.html', true);
+  xhr.open('GET', '../particles.html', true);
   xhr.onload = function() {
     if (xhr.status === 200) {
       document.getElementById('particles-js').innerHTML = xhr.responseText;
