@@ -1,11 +1,26 @@
 document.addEventListener('DOMContentLoaded', function() {
   var xhr = new XMLHttpRequest();
   xhr.open('GET', 'index.html', true);
+  
   xhr.onload = function() {
     if (xhr.status === 200) {
-      document.getElementById('particles-js').innerHTML = xhr.responseText;
+      // Cargar el contenido de 'index.html'
+      var responseHTML = xhr.responseText;
+
+      // Crear un contenedor temporal para analizar el contenido HTML
+      var tempDiv = document.createElement('div');
+      tempDiv.innerHTML = responseHTML;
+
+      // Seleccionar el fragmento deseado del contenido cargado
+      var desiredContent = tempDiv.querySelector('#particles-js');
+      
+      if (desiredContent) {
+        // Reemplazar el contenido del elemento con id 'particles-js' en la página actual
+        document.getElementById('particles-js').innerHTML = desiredContent.innerHTML;
+      }
     }
   };
+
   xhr.send();
 });
 
