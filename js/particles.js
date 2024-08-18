@@ -1,8 +1,3 @@
-document.addEventListener("DOMContentLoaded", function() {
-  var particlesDiv = document.getElementById('particles-js');
-  document.body.appendChild(particlesDiv);
-});
-
 /* -----------------------------------------------
 /* Author : Vincent Garreau  - vincentgarreau.com
 /* MIT license: http://opensource.org/licenses/MIT
