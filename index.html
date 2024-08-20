@@ -80,17 +80,5 @@
     <script src="js/buscar.js" defer></script>
     <script src="js/invertir.js" defer></script>
 
-    <script>
-        document.addEventListener("DOMContentLoaded", function() {
-            // Comprueba si la página ya ha sido recargada anteriormente
-            if (!sessionStorage.getItem('reloaded')) {
-                sessionStorage.setItem('reloaded', 'true');
-                location.reload(true); // Recarga la página
-            } else {
-                sessionStorage.removeItem('reloaded'); // Elimina el indicador después de la primera recarga
-            }
-        });
-    </script>
-
 </body>
 </html>

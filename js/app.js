@@ -1,3 +1,17 @@
+// Recarga de página en dispositivos móviles
+document.addEventListener("DOMContentLoaded", function() {
+    function isMobileDevice() {
+        return window.matchMedia("(max-width: 1000px)").matches;
+    }
+    if (isMobileDevice()) {
+        if (!sessionStorage.getItem('reloaded')) {
+            sessionStorage.setItem('reloaded', 'true');
+            location.reload(true);
+        } else {
+            sessionStorage.removeItem('reloaded');
+        }
+    }
+});
 /* -----------------------------------------------
 /* How to use? : Check the GitHub README
 /* ----------------------------------------------- */
