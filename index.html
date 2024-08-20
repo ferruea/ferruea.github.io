@@ -79,6 +79,22 @@
     <script src="js/music.js" defer></script>
     <script src="js/buscar.js" defer></script>
     <script src="js/invertir.js" defer></script>
+    
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            function isMobileDevice() {
+                return window.matchMedia("(max-width: 1000px)").matches;
+            }
+            if (isMobileDevice()) {
+                if (!sessionStorage.getItem('reloaded')) {
+                    sessionStorage.setItem('reloaded', 'true');
+                    location.reload(true);
+                } else {
+                    sessionStorage.removeItem('reloaded');
+                }
+            }
+        });
+    </script>
 
 </body>
 </html>
