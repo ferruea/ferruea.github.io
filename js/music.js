@@ -15,6 +15,7 @@ const canciones = ["",
 "abraham-mateo-ana-mena-quiero-decirte.mp3",
 "abraham-mateo-danny-ocean-bailarina.mp3",
 "abraham-mateo-maniaca.mp3",
+"abraham-mateo-naiara-tienes-que-saber.mp3",
 "acdc-back-in-black.mp3",
 "adele-easy-on-me.mp3",
 "adele-oh-my-god.mp3",
@@ -118,6 +119,7 @@ const canciones = ["",
 "anitta-ft-chencho-corleone-gata.mp3",
 "anitta-funk-rave.mp3",
 "anitta-justin-quiles-envolver-remix.mp3",
+"anonimus-pirlo-extendo.mp3",
 "anubiis-x-hades-66-maradona.mp3",
 "anuel-aa-&-nio-garcia-oh-na-na.mp3",
 "anuel-aa-brother.mp3",
@@ -874,6 +876,7 @@ const canciones = ["",
 "feid-karol-g-friki.mp3",
 "feid-lady-mi-amor.mp3",
 "feid-lenny-tavarez-badwine-remix.mp3",
+"feid-maisak-se-me-olvida.mp3",
 "feid-manas-ru-fino-la-vuelta.mp3",
 "feid-mionca-al-bloque.mp3",
 "feid-mora-eladio-carrion-fumateo-remix.mp3",
@@ -1071,6 +1074,7 @@ const canciones = ["",
 "jowell-&-randy-ft-wisin-y-yandel-si-te-pillo.mp3",
 "jowell-&-randy-nicky-jam-en-la-intimidad.mp3",
 "jowell-&-randy-x-j-balvin-anaranjado.mp3",
+"juan-duque-ft-andy-rivera-ni-con-el-ni-conmigo.mp3",
 "juan-duque-ft-ryan-castro-maria-remix.mp3",
 "juan-luis-guerra-mambo-23.mp3",
 "juan-magan-donde-estas.mp3",
@@ -1168,6 +1172,7 @@ const canciones = ["",
 "kenia-os-yeri-mua-ghetto-kids-mamita-rica.mp3",
 "kenya-grace-strangers.mp3",
 "keshi-dream.mp3",
+"kevin-amf-tiagz-maradona-tatara.mp3",
 "kevin-roldan-almighty-tu-silueta.mp3",
 "kevin-roldan-bryant-myers-after-party.mp3",
 "kevin-roldan-bryant-myers-s.e.x.o.mp3",
@@ -1429,13 +1434,16 @@ const canciones = ["",
 "mr-black-el-presidente-catalina.mp3",
 "mr-black-el-presidente-nacho-nejo-beele-catalina-remix.mp3",
 "myke-towers-&-darell-otra-noche.mp3",
+"myke-towers-&-jay-wheeler-aunque-llegue-otro.mp3",
 "myke-towers-&-j-balvin-celos.mp3",
 "myke-towers-&-ntg-la-primera-vez.mp3",
+"myke-towers-&-peso-pluma-se-te-nota.mp3",
 "myke-towers-aguardiente.mp3",
 "myke-towers-arcangel-don-&-tego.mp3",
 "myke-towers-bad-bunny-adivino.mp3",
 "myke-towers-bajo-el-sol.mp3",
 "myke-towers-cartera-&-tacos.mp3",
+"myke-towers-competencia.mp3",
 "myke-towers-cosmeticos.mp3",
 "myke-towers-disco-subterranea.mp3",
 "myke-towers-en-alta.mp3",
@@ -1799,6 +1807,7 @@ const canciones = ["",
 "sabrina-carpenter-espresso.mp3",
 "sabrina-carpenter-feather.mp3",
 "sabrina-carpenter-please-please-please.mp3",
+"sabrina-carpenter-taste.mp3",
 "saiko-bandidona.mp3",
 "saiko-bryant-myers-eskeleto.mp3",
 "saiko-dellafuente-luna.mp3",
@@ -1878,6 +1887,7 @@ const canciones = ["",
 "sky-rompiendo-dei-v-crush.mp3",
 "sky-rompiendo-feid-myke-towers-el-cielo.mp3",
 "slayter-hades66-bryant-myers-9x19-remix.mp3",
+"slayter-luar-la-l-jay-wheeler-pressure-9x19-no-soy-2.0.mp3",
 "smash-mouth-all-star.mp3",
 "smile-butterfly.mp3",
 "sofia-reyes-beele-cobarde.mp3",
@@ -2295,36 +2305,26 @@ function reproduccionActual(texto){
 }
 // Función para cargar las canciones en el reproductor
 function loadMusic(ruta) {
-	var source = document.getElementById('source');
-    var folder1 = "https://ferruea.github.io/music1/"; // Carpeta donde tenemos almacenada la música music1
-    var folder2 = "https://ferruea.github.io/music2/"; // Carpeta donde tenemos almacenada la música music2
-    var folder3 = "https://ferruea.github.io/music3/"; // Carpeta donde tenemos almacenada la música music3
-    // Verificar si el archivo existe en folder1
+    var source = document.getElementById('source');
+    var folders = [
+        "https://ferruea.github.io/music1/",
+        "https://ferruea.github.io/music2/",
+        "https://ferruea.github.io/music3/"
+    ]; // Arreglo con las carpetas donde tenemos almacenada la música
     var xhr = new XMLHttpRequest();
-    xhr.open('HEAD', folder1 + ruta, false);
-    xhr.send();
-    if (xhr.status === 200) {
-        // Si el archivo existe en folder1
-        source.src = folder1 + ruta;
-    } else {
-        // Si no se encuentra el archivo en folder1, verificar en folder2
-        xhr.open('HEAD', folder2 + ruta, false);
+    var fileFound = false;
+    for (var i = 0; i < folders.length; i++) {
+        xhr.open('HEAD', folders[i] + ruta, false);
         xhr.send();
-        if (xhr.status === 200) {
-            // Si el archivo existe en folder2
-            source.src = folder2 + ruta;
-        } else {
-            // Si no se encuentra en folder2, verificar en folder3
-            xhr.open('HEAD', folder3 + ruta, false);
-            xhr.send();
-            if (xhr.status === 200) {
-                // Si el archivo existe en folder3
-                source.src = folder3 + ruta;
-            } else {
-                console.error("El archivo no existe en ninguna de las rutas especificadas.");
-                return;
-            }
+        if (xhr.status === 200) { // Si el archivo existe en la carpeta actual
+            source.src = folders[i] + ruta;
+            fileFound = true;
+            break; // Salir del bucle si se encontró el archivo
         }
+    }
+    if (!fileFound) {
+        console.error("El archivo no existe en ninguna de las rutas especificadas.");
+        return;
     }
     var index = indiceActual[0] = canciones.indexOf(ruta);
     removeActive();
