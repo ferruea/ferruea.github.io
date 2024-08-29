@@ -1,5 +1,5 @@
 //Array con el listado de canciones a mostrar en el reprodutor
-const canciones = ["",
+const canciones = [
 //Aquí la musica
 "$uicideboy$-...and-to-those-i-love-thanks-for-sticking-around.mp3",
 "(g)i-dle-nxde.mp3",
@@ -2152,7 +2152,21 @@ const canciones = ["",
 "zzoilo-aitana-mon-amour-remix.mp3",
 "zzoilo-sofia-reyes-el-wey.mp3",
 ]
-var indiceActual = new Array(1)
+let indiceActual = [0]
+//Funcion para mezclar el array de canciones de manera aleatoria
+function shuffleArray(array) {
+	for (let i = array.length - 1; i > 0; i--) {
+		const j = Math.floor(Math.random() * (i + 1));
+		[array[i], array[j]] = [array[j], array[i]];
+    }
+}
+//Funcion para actualizar la lista de canciones en el div
+function updatePlayList() {
+    const playListDiv = document.getElementById('playList');
+    playListDiv.innerHTML = ''; // Limpiar el contenido actual
+    playListDiv.appendChild(crearPlayList()); // Crear y agregar la nueva lista de canciones
+    setupEventListeners(); // Volver a configurar los eventos de clic
+}
 //Funcion para crear mediante javascript el listado de canciones en formato de tabla
 function crearPlayList(){
 	//Crear elemento table
@@ -2164,7 +2178,7 @@ function crearPlayList(){
 
 	listado.appendChild(table)
 
-	for (let i = 1; i<canciones.length; i++){
+	for (let i = 0; i<canciones.length; i++){
 		//Crear elemento tr y td
 		const tr = document.createElement('tr')
 		const td = document.createElement('td')
@@ -2181,19 +2195,29 @@ function crearPlayList(){
 	}
 	return listado
 }
+//Funcion que se llama al hacer clic en el botón de aleatorizar
+document.getElementById('randomizeBtn').onclick = () => {
+	shuffleArray(canciones); //Aleatorizar el array de canciones
+	updatePlayList(); //Actualizar el listado de canciones en el div
+}
+//Inicializar la lista de canciones al cargar la página
+document.getElementById('playList').appendChild(crearPlayList());
+setupEventListeners();
 document.getElementById('playList').appendChild(crearPlayList())
-
-var listadoMusica= document.getElementById('listadoMusica')
-listadoMusica.onclick = (e) =>{
-	const itemClick = e.target
-	removeActive()
-	itemClick.classList.add("active");
-	reproduccionActual(itemClick.innerText)
-	loadMusic(itemClick.innerText)
-	player.play()
-	indiceActual[0]= e.target.id
-	classIconPlay();
-	toggleIcon()
+//Configura los eventos de clic para manejar la selección de canciones
+function setupEventListeners() {
+	var listadoMusica= document.getElementById('listadoMusica')
+	listadoMusica.onclick = (e) =>{
+		const itemClick = e.target
+		removeActive()
+		itemClick.classList.add("active");
+		reproduccionActual(itemClick.innerText)
+		loadMusic(itemClick.innerText)
+		player.play()
+		indiceActual[0]= e.target.id
+		classIconPlay();
+		toggleIcon()
+	}
 }
 //Funcion para cambiar el icono del reprodutor
 function classIconPlay(){
@@ -2370,4 +2394,5 @@ function secondsToString(seconds) {
   second = (second < 10)? '0' + second : second;
   return hour  + minute + ':' + second;
 }
-loadMusic(canciones[1])
+//Inicializar la lista de canciones al cargar la página
+loadMusic(canciones[0])
