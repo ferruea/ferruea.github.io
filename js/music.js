@@ -2172,22 +2172,16 @@ function crearPlayList(){
 	//Crear elemento table
 	const table = document.createElement('table')
 	table.setAttribute("id", 'regTable')
-
 	const listado = document.createElement('ol')
 	listado.setAttribute("id", 'listadoMusica')
-
 	listado.appendChild(table)
-
 	for (let i = 0; i<canciones.length; i++){
 		//Crear elemento tr y td
 		const tr = document.createElement('tr')
 		const td = document.createElement('td')
-
 		const item = document.createElement('li')
-
 		tr.appendChild(td)
 		td.appendChild(item)
-
 		item.appendChild(document.createTextNode(canciones[i])) 
 		item.setAttribute("id", canciones.indexOf(canciones[i]))
 		//listado.appendChild(item)
@@ -2195,12 +2189,11 @@ function crearPlayList(){
 	}
 	return listado
 }
-//Funcion que se llama al hacer clic en el botón de aleatorizar
-document.getElementById('randomizeBtn').onclick = () => {
-	shuffleArray(canciones); //Aleatorizar el array de canciones
-	updatePlayList(); //Actualizar el listado de canciones en el div
-}
 //Inicializar la lista de canciones al cargar la página
+function aleatorio(){
+	shuffleArray(canciones); // Aleatorizar el array de canciones
+	updatePlayList(); // Actualizar el listado de canciones en el div
+}
 document.getElementById('playList').appendChild(crearPlayList());
 setupEventListeners();
 document.getElementById('playList').appendChild(crearPlayList())
