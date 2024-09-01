@@ -43,10 +43,10 @@
                 <br><span id="currentPlay"></span><br>
                 <progress id="progress" value="0" max="100"></progress>
 
-                <table><thead>
+                <div class="table-container"><table><thead>
                     <tr>
                         <th class="col1">
-                            <a><i class="fas fa-aleatorio fa-2x" onclick="aleatorio()" id="aleatorio"></i></a>
+                            <i class="far fa-reset-1 fa-2x" onclick="aleatorio();" id="aleatorio"></i>
                         </th>
                         <th class="col2">
                             <h3>Mi música</h3>
@@ -56,7 +56,7 @@
                             <i class="far fa-repeat-off fa-2x" onclick="toggleRepeat();" id="iconRepeat"></i>
                         </th>
                     </tr>
-                </thead></table>
+                </thead></table></div>
 
                 <div id="playList"></div>
             </div>

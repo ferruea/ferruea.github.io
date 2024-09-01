@@ -167,6 +167,9 @@ a {
   color: #8f95a4;
 }
 
+.table-container {
+  margin: 0 25px;
+}
 table {
   width: 100%;
   border-collapse: collapse;
@@ -180,7 +183,6 @@ th, td {
 }
 .col2 {
   width: 70%;
-  border: none;
 }
 
 .footer {
