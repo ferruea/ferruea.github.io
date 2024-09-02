@@ -9,6 +9,7 @@ const canciones = [
 "3am-beret-olvidala.mp3",
 "3am-khea-aqui-sigo-remix.mp3",
 "3am-la-noche.mp3",
+"6ix9ine-ft-la-perversa-la-baby.mp3",
 "6ix9ine-ft-lenier-bori.mp3",
 "6ix9ine-ft-yailin-la-mas-viral-pa-ti.mp3",
 "aaron-smith-dancin.mp3",
@@ -99,6 +100,7 @@ const canciones = [
 "anais-mva-tca.mp3",
 "anais-mva-xs.mp3",
 "ana-mena-belinda-las-12.mp3",
+"ana-mena-emilia-carita-triste.mp3",
 "ana-mena-fred-de-palma-criminal.mp3",
 "ana-mena-gale-la-razon.mp3",
 "ana-mena-madrid-city.mp3",
@@ -107,6 +109,7 @@ const canciones = [
 "ana-mena-rocco-hunt-un-beso-de-improviso.mp3",
 "ana-mena-un-clasico.mp3",
 "ana-mena-x-omar-montes-x-maffio-solo.mp3",
+"andrea-bocelli-karol-g-vivo-por-ella.mp3",
 "andy-rivera-beele-te-perdi.mp3",
 "andy-rivera-despues-de-tanto.mp3",
 "andy-rivera-luigi-21-plus-de-lejitos.mp3",
@@ -145,6 +148,7 @@ const canciones = [
 "anuel-aa-quavo-ft-dj-luian-mambo-kingz-baby.mp3",
 "anuel-aa-que-nos-paso.mp3",
 "anuel-aa-quevedo-maluma-ft-dj-luian-mambo-kingz-oa.mp3",
+"anuel-aa-shampoo-de-coco.mp3",
 "anuel-aa-si-yo-me-muero.mp3",
 "anuel-aa-tacos-gucci.mp3",
 "anuel-aa-yailin-la-mas-viral-si-tu-me-busca.mp3",
@@ -444,6 +448,7 @@ const canciones = [
 "bryan-adams-everything-i-do-i-do-it-for-you.mp3",
 "bryant-myers-chi-partner.mp3",
 "bryant-myers-cris-mj-tuss.mp3",
+"bryant-myers-omar-courtz-garchin.mp3",
 "bryant-myers-x-yovngchimi-x-dei-v-ft-ankhal-on-fleek.mp3",
 "brytiago-&-anuel-aa-kilerito.mp3",
 "brytiago-ft-nengo-flow-&-cdobleta-hptismo.mp3",
@@ -652,6 +657,7 @@ const canciones = [
 "david-guetta-mistajam-john-newman-if-you-really-love-me.mp3",
 "david-guetta-showtek-ft-vassy-bad.mp3",
 "david-guetta-sia-lets-love.mp3",
+"david-kushner-darkerside.mp3",
 "david-kushner-daylight.mp3",
 "david-kushner-hero.mp3",
 "david-kushner-humankind.mp3",
@@ -1099,6 +1105,7 @@ const canciones = [
 "jvke-ft-dekko-golden-hour-remix.mp3",
 "jvke-ghost-town.mp3",
 "jvke-golden-hour.mp3",
+"jvke-her.mp3",
 "jvke-i-am-not-okay.mp3",
 "jvke-i-cant-help-it.mp3",
 "jvke-moon-and-back.mp3",
@@ -1197,6 +1204,7 @@ const canciones = [
 "kygo-ft-conrad-sewell-firestone.mp3",
 "kygo-ft-justin-jesso-stargazing.mp3",
 "kygo-ft-parson-james-stole-the-show.mp3",
+"kylie-minogue-ft-bebe-rexha-&-tove-lo-my-oh-my.mp3",
 "la-banda-del-5-ft-andy-rivera-dekko-la-rompecorazones-remix.mp3",
 "la-beba-toxica-y-cara.mp3",
 "labrinth-still-dont-know-my-name.mp3",
@@ -1222,6 +1230,7 @@ const canciones = [
 "lenny-tavarez-feid-empelotica.mp3",
 "lenny-tavarez-ft-wisin-llame pa-verte.mp3",
 "lenny-tavarez-gino-mella-jairo-vera-underwater.mp3",
+"lenny-tavarez-prince-royce-tu-feo.mp3",
 "leo-rizzi-amapolas.mp3",
 "leo-rizzi-ft-reik-no-siempre-quedara-paris-remix.mp3",
 "lerica-mau-y-ricky-hijos-contigo.mp3",
@@ -1270,6 +1279,7 @@ const canciones = [
 "luar-la-l-perdida.mp3",
 "luar-la-l-x-ozuna-otra-vibra.mp3",
 "luck-ra-maluma-khea-hola-perdida-remix.mp3",
+"luck-ra-nicki-nicole-doctor.mp3",
 "luis-alfonso-x-blessd-tequila-con-cerveza.mp3",
 "luis-fonsi-la-romana.mp3",
 "lukas-graham-7-years.mp3",
@@ -1370,6 +1380,7 @@ const canciones = [
 "michael-jackson-billie-jean.mp3",
 "michel-telo-ai-se-eu-te-pego.mp3",
 "miguel-bueno-fan-de-tus-ojos.mp3",
+"miguel-bueno-x-hozwal-x-luister-la-voz-escandalo-remix.mp3",
 "mike-bahia-andy-rivera-ir-sais-nadie-mas.mp3",
 "mike-perry-ft-shy-martin-the-ocean.mp3",
 "mike-posner-i-took-a-pill-in-ibiza-seeb-remix.mp3",
@@ -1470,6 +1481,7 @@ const canciones = [
 "myles-smith-stargazing.mp3",
 "nanpa-basico-beele-hasta-aqui-llegue.mp3",
 "nanpa-basico-ft-ryan-castro-idilio.mp3",
+"nanpa-basico-kany-garcia-duelo.mp3",
 "natalia-lacunza-cuestion-de-suerte.mp3",
 "natalia-lacunza-todo-lamento.mp3",
 "natalia-lafourcade-hasta-la-raiz.mp3",
@@ -1564,6 +1576,7 @@ const canciones = [
 "onerepublic-i-aint-worried.mp3",
 "onerepublic-nobody-from-kaiju-vol-8.mp3",
 "onerepublic-serotonin.mp3",
+"onerepublic-sink-or-swim.mp3",
 "ovi-darell-luar-la-l-al-otro-nivel.mp3",
 "ovi-noriel-neutro-shorty-a-los-16.mp3",
 "ovi-ryan-castro-polima-westcoast-ven-arrebatate.mp3",
@@ -1728,6 +1741,7 @@ const canciones = [
 "red-hot-chili-peppers-californication.mp3",
 "reik-carin-leon-el-correcto.mp3",
 "reik-ya-me-entere.mp3",
+"rels-b-balearico.mp3",
 "rels-b-caida-del-cielo.mp3",
 "rels-b-como-dormiste.mp3",
 "rels-b-detras-del-dj.mp3",
@@ -1840,6 +1854,7 @@ const canciones = [
 "sebastian-yatra-guaynaa-chica-ideal.mp3",
 "sebastian-yatra-justin-quiles-l-gante-regrese.mp3",
 "sebastian-yatra-lasso-ojos-marrones.mp3",
+"sebastian-yatra-los-domingos.mp3",
 "sebastian-yatra-manuel-turizo-beele-vagabundo.mp3",
 "sebastian-yatra-melancolicos-anonimos.mp3",
 "sebastian-yatra-myke-towers-pareja-del-ano.mp3",
@@ -2196,7 +2211,6 @@ function aleatorio(){
 }
 document.getElementById('playList').appendChild(crearPlayList());
 setupEventListeners();
-document.getElementById('playList').appendChild(crearPlayList())
 //Configura los eventos de clic para manejar la selección de canciones
 function setupEventListeners() {
 	var listadoMusica= document.getElementById('listadoMusica')
@@ -2243,12 +2257,10 @@ const updateProgress = () =>{
 	if (player.currentTime >0){
 		const barra = document.getElementById('progress')
 		barra.value = (player.currentTime / player.duration) * 100
-		
 		var duracionSegundos= player.duration.toFixed(0);
 		dura=secondsToString(duracionSegundos);
 		var actualSegundos = player.currentTime.toFixed(0)
-		actual=secondsToString(actualSegundos);
-		
+		actual=secondsToString(actualSegundos);	
 		duracion= actual +' / '+ dura
 		document.getElementById('timer').innerText=duracion 
 	}
