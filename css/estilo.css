@@ -200,6 +200,14 @@ th, td {
   font-weight: bold;
 }
 
+.los40es {
+  position: fixed;
+  z-index: 1;
+  top: 30px;
+  right: 30px;
+  font-weight: bold;
+}
+
 .boton {
   position: fixed;
   z-index: 1;
