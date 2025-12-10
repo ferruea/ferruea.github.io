@@ -72,7 +72,7 @@
     </div>
 
     <div class="los40es">
-        <a target="_blank" href="https://19993.live.streamtheworld.com/LOS40_SC">los40es</a>
+        <a href="#" onclick="playLos40(); return false;">los40es</a>
     </div>
 
     <button class="boton" onclick="invertir();">
@@ -101,6 +101,18 @@
             }
         });
     </script>
+
+    <script>
+    function playLos40() {
+        los40es = true; // modo radio
+        let player = document.getElementById("player");
+        let source = document.getElementById("source");
+        source.src = "https://19993.live.streamtheworld.com/LOS40_SC";
+        player.load();
+        player.play();
+        document.getElementById("currentPlay").innerText = "los40es";
+    }
+</script>
 
 </body>
 </html>

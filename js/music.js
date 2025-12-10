@@ -2720,17 +2720,24 @@ function ajustarVolumen(delta) {
 //Funcion para actualizar la barra de progreso del reprodutor
 let isRepeating = false;
 // Variables globales para controlar el estado
-const updateProgress = () =>{
-	if (player.currentTime >0){
-		const barra = document.getElementById('progress')
-		barra.value = (player.currentTime / player.duration) * 100
-		var duracionSegundos= player.duration.toFixed(0);
-		dura=secondsToString(duracionSegundos);
-		var actualSegundos = player.currentTime.toFixed(0)
-		actual=secondsToString(actualSegundos);	
-		duracion= actual +' / '+ dura
-		document.getElementById('timer').innerText=duracion 
-	}
+const updateProgress = () => {
+    if (player.currentTime > 0) {
+        const barra = document.getElementById('progress')
+        barra.value = (player.currentTime / player.duration) * 100
+        // Tiempo actual
+        let actualSegundos = player.currentTime.toFixed(0);
+        let actual = secondsToString(actualSegundos);
+        // Si NO es los40 → mostrar "actual / duración"
+        if (!los40es) {
+            let duracionSegundos = player.duration.toFixed(0);
+            let dura = secondsToString(duracionSegundos);
+            document.getElementById('timer').innerText = actual + ' / ' + dura
+        } 
+        // Si es los40 → mostrar solo el tiempo reproducido
+        else {
+            document.getElementById('timer').innerText = actual
+        }
+    }
 	if (player.ended) {
         if (isRepeating) {
             player.currentTime = 0;
@@ -2801,6 +2808,7 @@ function reproduccionActual(texto){
 }
 // Función para cargar las canciones en el reproductor
 function loadMusic(ruta) {
+	los40es = false; // ← volver al modo normal
     var source = document.getElementById('source');
     var folders = [
         "https://ferruea.github.io/music1/",
